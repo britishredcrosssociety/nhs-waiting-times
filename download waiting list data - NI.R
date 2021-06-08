@@ -62,4 +62,4 @@ ni_waits <- bind_rows(ni_outpatient_sum, ni_inpatient_sum) %>%
   summarise(`Total waiting > 52 weeks` = sum(`Total waiting > 52 weeks`, na.rm = TRUE),
             `Total waiting > 18 weeks` = sum(`Total waiting > 18 weeks`, na.rm = TRUE))
 
-write_csv(ni_waits, "analysis/nhs-waiting-times/waiting lists for NI.csv")
+write_csv(ni_waits, "data/waiting lists for NI.csv")

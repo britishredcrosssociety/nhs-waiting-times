@@ -2,10 +2,10 @@ library(tidyverse)
 library(ggfittext)
 library(tidytext)
 
-region_waits <- read_csv("analysis/nhs-waiting-times/waiting lists for NHS Regions.csv")
-wales_waits <- read_csv("analysis/nhs-waiting-times/waiting lists for Wales.csv")
-sco_waits <- read_csv("analysis/nhs-waiting-times/waiting lists for Scotland.csv")
-ni_waits <- read_csv("analysis/nhs-waiting-times/waiting lists for NI.csv")
+region_waits <- read_csv("data/waiting lists for NHS Regions.csv")
+wales_waits <- read_csv("data/waiting lists for Wales.csv")
+sco_waits <- read_csv("data/waiting lists for Scotland.csv")
+ni_waits <- read_csv("data/waiting lists for NI.csv")
 
 # ---- Plot regional waiting times ----
 # Total numbers of people waiting more than a year in each region
@@ -31,7 +31,7 @@ region_waits %>%
     axis.ticks = element_blank()
   )
 
-ggsave("analysis/nhs-waiting-times/NHS waiting times by region - more than a year.png", height = 100, width = 120, units = "mm")
+ggsave("charts/NHS waiting times by region - more than a year.png", height = 100, width = 120, units = "mm")
 
 # Number of people waiting > 18 weeks
 region_waits %>% 
@@ -56,7 +56,7 @@ region_waits %>%
     axis.ticks = element_blank()
   )
 
-ggsave("analysis/nhs-waiting-times/NHS waiting times by region - more than 18 weeks.png", height = 100, width = 120, units = "mm")
+ggsave("charts/NHS waiting times by region - more than 18 weeks.png", height = 100, width = 120, units = "mm")
 
 # ---- Plot England waiting list sizes over time ----
 region_waits %>% 
@@ -78,7 +78,7 @@ region_waits %>%
   
   theme_classic()
 
-ggsave("analysis/nhs-waiting-times/NHS waiting list over time - more than 52 weeks.png", height = 100, width = 120, units = "mm")
+ggsave("charts/NHS waiting list over time - more than 52 weeks.png", height = 100, width = 120, units = "mm")
 
 # ---- Plot regional waiting list sizes over time in England ----
 region_waits %>% 
@@ -98,7 +98,7 @@ region_waits %>%
   theme_classic() +
   theme(legend.position = c(0.85, 0.2))
 
-ggsave("analysis/nhs-waiting-times/NHS waiting list over time by region - more than 52 weeks.png", height = 80, width = 170, units = "mm")
+ggsave("charts/NHS waiting list over time by region - more than 52 weeks.png", height = 80, width = 170, units = "mm")
 
 # ---- Plot regional waiting list sizes over time in UK ----
 ni_waits_total <- 
@@ -134,7 +134,7 @@ uk_waits %>%
   theme_classic() +
   theme(legend.position = c(0.11, 0.9), legend.direction = "horizontal")
 
-ggsave("analysis/nhs-waiting-times/NHS waiting list over time by region - more than 52 weeks.png", height = 90, width = 205, units = "mm")
+ggsave("charts/NHS waiting list over time by region - more than 52 weeks.png", height = 90, width = 205, units = "mm")
 
 # ---- Types of treatment ----
 region_waits %>% 
@@ -157,7 +157,7 @@ region_waits %>%
     axis.ticks = element_blank()
   )
 
-ggsave("analysis/nhs-waiting-times/NHS waiting times by type of treatment - more than a year.png", height = 120, width = 120, units = "mm")
+ggsave("charts/NHS waiting times by type of treatment - more than a year.png", height = 120, width = 120, units = "mm")
 
 # ---- Types of treatment by region ----
 # Plot top three treatments in each region
@@ -188,4 +188,4 @@ region_waits %>%
     axis.ticks = element_blank()
   )
 
-ggsave("analysis/nhs-waiting-times/NHS waiting times by type of treatment by region - more than a year.png", height = 120, width = 170, units = "mm")
+ggsave("charts/NHS waiting times by type of treatment by region - more than a year.png", height = 120, width = 170, units = "mm")

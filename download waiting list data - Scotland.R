@@ -26,5 +26,5 @@ tribble(
   2019, "Feb", 21179,
   2019, "Jan", 22782
 ) %>% 
-  write_csv("analysis/nhs-waiting-times/waiting lists for Scotland.csv")
+  write_csv("data/waiting lists for Scotland.csv")
 

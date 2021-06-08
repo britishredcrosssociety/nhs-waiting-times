@@ -1,7 +1,7 @@
 library(tidyverse)
 library(ggfittext)
 
-stp_waits <- read_csv("analysis/nhs-waiting-times/waiting lists for STPs.csv")
+stp_waits <- read_csv("data/waiting lists for STPs.csv")
 
 # Sustainability and Transformation Partnerships (April 2020) Names and Codes in England
 # Source: https://geoportal.statistics.gov.uk/datasets/sustainability-and-transformation-partnerships-april-2020-names-and-codes-in-england/data
@@ -33,7 +33,7 @@ stp_waits %>%
     plot.title = element_text(face = "bold", size = rel(1.2))
   )
 
-ggsave("analysis/nhs-waiting-times/Greater Manchester waiting times - more than a year.png", height = 150, width = 300, units = "mm")
+ggsave("charts/Greater Manchester waiting times - more than a year.png", height = 150, width = 300, units = "mm")
 
 # ---- Plot Greater Manchester waiting list over time ----
 stp_waits %>% 
@@ -56,4 +56,4 @@ stp_waits %>%
        x = NULL, y = "Number of people waiting more than a year") +
   theme_classic()
 
-ggsave("analysis/nhs-waiting-times/Greater Manchester waiting list over time - more than 52 weeks.png", height = 100, width = 200, units = "mm")
+ggsave("charts/Greater Manchester waiting list over time - more than 52 weeks.png", height = 100, width = 200, units = "mm")

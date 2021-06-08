@@ -157,8 +157,8 @@ region_waits <-
   mutate(Month = factor(Month, levels = month.abb))
 
 # Save
-write_csv(stp_waits, "analysis/nhs-waiting-times/waiting lists for STPs.csv")
-write_csv(region_waits, "analysis/nhs-waiting-times/waiting lists for NHS Regions.csv")
+write_csv(stp_waits, "data/waiting lists for STPs.csv")
+write_csv(region_waits, "data/waiting lists for NHS Regions.csv")
 
 # ---- Load all waiting list data into a single dataframe ----
 # (Commenting out because it takes too much memory)

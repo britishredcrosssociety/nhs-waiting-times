@@ -2,7 +2,7 @@ library(tidyverse)
 library(lubridate)
 
 # Manually downloaded from https://statswales.gov.wales/Catalogue/Health-and-Social-Care/NHS-Hospital-Waiting-Times/Referral-to-Treatment/patientpathwayswaitingtostarttreatment-by-month-groupedweeks
-wales_raw <- read_csv("analysis/nhs-waiting-times/waiting lists for Wales - raw data.csv", skip = 2,
+wales_raw <- read_csv("data/waiting lists for Wales - raw data.csv", skip = 2,
                       col_types = cols(
                         .default = col_double(),
                         X1 = col_character()
@@ -22,4 +22,4 @@ wales_waits <-
   
   select(Year, Month, `Total waiting > 52 weeks`, `Total waiting > 18 weeks`)
 
-write_csv(wales_waits, "analysis/nhs-waiting-times/waiting lists for Wales.csv")
+write_csv(wales_waits, "data/waiting lists for Wales.csv")

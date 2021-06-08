@@ -16,7 +16,7 @@ plot_waits_latest_month <- function(
     highlight_stp = NULL,
     population_percentage = TRUE
 ) {
-  stp_waits <- read_csv("analysis/nhs-waiting-times/waiting lists for STPs.csv")
+  stp_waits <- read_csv("data/waiting lists for STPs.csv")
   
   # Sustainability and Transformation Partnerships (April 2020) Names and Codes in England
   # Source: https://geoportal.statistics.gov.uk/datasets/sustainability-and-transformation-partnerships-april-2020-names-and-codes-in-england/data
@@ -98,5 +98,5 @@ mean(plt_harrogate$data$proportion_waiting)
 plt_harrogate$plt +
   labs(title = "Percentage of people waiting over a year for treatment in West Yorkshire and Harrogate")
 
-ggsave("analysis/nhs-waiting-times/West Yorkshire and Harrogate waiting times - more than a year - proportion.png", height = 150, width = 350, units = "mm")
+ggsave("charts/West Yorkshire and Harrogate waiting times - more than a year - proportion.png", height = 150, width = 350, units = "mm")
 
