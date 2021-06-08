@@ -61,7 +61,10 @@ admissions_ics <-
   filter(!is.na(stp_code)) %>% 
   
   group_by(Year, Month, stp_code) %>% 
-  summarise(Admissions = sum(Admissions))
+  summarise(Admissions = sum(Admissions)) %>% 
+  
+  group_by(stp_code) %>% 
+  mutate(Admissions_cumulative = cumsum(Admissions))
 
 # ---- Covid-19 hospital deaths ----
 # COVID 19 total announced deaths 08 June 2021
@@ -109,8 +112,11 @@ deaths_ics <-
   filter(!is.na(stp_code)) %>% 
   
   group_by(Year, Month, stp_code) %>% 
-  summarise(Deaths = sum(Deaths, na.rm = TRUE))
+  summarise(Deaths = sum(Deaths, na.rm = TRUE)) %>% 
+  
+  group_by(stp_code) %>% 
+  mutate(Deaths_cumulative = cumsum(Deaths))
 
 # ---- Save data ----
-write_csv(admissions_ics, "analysis/nhs-waiting-times/covid-19-admissions-ics.csv")
-write_csv(deaths_ics, "analysis/nhs-waiting-times/covid-19-deaths-ics.csv")
+write_csv(admissions_ics, "data/covid-19-admissions-ics.csv")
+write_csv(deaths_ics, "data/covid-19-deaths-ics.csv")
