@@ -105,7 +105,28 @@ for (file in list.files(td, pattern = "*.csv", full.names = TRUE)) {
            Year = year(Date))
   
   # Data from April 2020 onward contains STPs/ICSs
-  if (d$Date[1] >= dmy("01-04-2020")) {
+  if (d$Date[1] >= dmy("01-04-2021")) {
+    # Calculate STP/ICS totals
+    d_stp <- 
+      d %>% 
+      mutate(
+        `Total waiting > 18 weeks` = rowSums(across(`Gt 18 To 19 Weeks SUM 1`:`Gt 104 Weeks SUM 1`), na.rm = TRUE),
+        `Total waiting > 52 weeks` = rowSums(across(`Gt 52 To 53 Weeks SUM 1`:`Gt 104 Weeks SUM 1`), na.rm = TRUE)
+      ) %>% 
+      
+      group_by(Year, Month, `Provider Parent Org Code`, `Provider Parent Name`, `Treatment Function Name`) %>% 
+      summarise(`Total waiting > 52 weeks` = sum(`Total waiting > 52 weeks`, na.rm = TRUE),
+                `Total waiting > 18 weeks` = sum(`Total waiting > 18 weeks`, na.rm = TRUE))
+    
+    # Bind to main STP dataframe
+    stp_waits <- bind_rows(stp_waits, d_stp)
+    
+    # Current data contains STPs/ICSs, so merge in NHS Regions
+    d <- 
+      d %>% 
+      left_join(stp_region, by = c("Provider Parent Org Code" = "STP20CDH"))
+  
+  } else if (d$Date[1] >= dmy("01-04-2020")) {
     # Calculate STP/ICS totals
     d_stp <- 
       d %>% 
@@ -135,13 +156,30 @@ for (file in list.files(td, pattern = "*.csv", full.names = TRUE)) {
       #        NHSER20NM = str_to_title(NHSER20NM))
   }
   
-  d_region <- 
-    d %>% 
-    mutate(`Total waiting > 18 weeks` = rowSums(across(`Gt 18 To 19 Weeks SUM 1`:`Gt 52 Weeks SUM 1`), na.rm = TRUE)) %>% 
+  if (d$Date[1] >= dmy("01-04-2021")) {
     
-    group_by(Year, Month, NHSER20NM, `Treatment Function Name`) %>% 
-    summarise(`Total waiting > 52 weeks` = sum(`Gt 52 Weeks SUM 1`, na.rm = TRUE),
-              `Total waiting > 18 weeks` = sum(`Total waiting > 18 weeks`, na.rm = TRUE))
+    d_region <- 
+      d %>% 
+      mutate(
+        `Total waiting > 18 weeks` = rowSums(across(`Gt 18 To 19 Weeks SUM 1`:`Gt 104 Weeks SUM 1`), na.rm = TRUE),
+        `Total waiting > 52 weeks` = rowSums(across(`Gt 52 To 53 Weeks SUM 1`:`Gt 104 Weeks SUM 1`), na.rm = TRUE)
+      ) %>% 
+      
+      group_by(Year, Month, NHSER20NM, `Treatment Function Name`) %>% 
+      summarise(`Total waiting > 52 weeks` = sum(`Total waiting > 52 weeks`, na.rm = TRUE),
+                `Total waiting > 18 weeks` = sum(`Total waiting > 18 weeks`, na.rm = TRUE))
+    
+  } else {
+    
+    d_region <- 
+      d %>% 
+      mutate(`Total waiting > 18 weeks` = rowSums(across(`Gt 18 To 19 Weeks SUM 1`:`Gt 52 Weeks SUM 1`), na.rm = TRUE)) %>% 
+      
+      group_by(Year, Month, NHSER20NM, `Treatment Function Name`) %>% 
+      summarise(`Total waiting > 52 weeks` = sum(`Gt 52 Weeks SUM 1`, na.rm = TRUE),
+                `Total waiting > 18 weeks` = sum(`Total waiting > 18 weeks`, na.rm = TRUE))
+    
+  }
   
   # Add regional data to main dataframe
   region_waits <- bind_rows(region_waits, d_region)
