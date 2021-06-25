@@ -57,8 +57,40 @@ stp_data_plot <-
   ) %>% 
   pivot_longer(cols = -c(1:3), names_to = "Statistic", values_to = "Rate")
 
-# ---- Plots for each STP/ICS ----
+# Calculate averages across ICSs
+stp_data_averages <- 
+  stp_data %>% 
+  select(
+    Code = `Provider Parent Org Code`,
+    STP20NM, 
+    Date, 
+    `Waiting list size` = proportion_waiting, 
+    `Admissions` = proportion_admissions, 
+    `Deaths` = proportion_deaths
+  ) %>% 
+  group_by(Date) %>% 
+  summarise(
+    `Waiting list size` = mean(`Waiting list size`, na.rm = TRUE), 
+    `Admissions` = mean(Admissions, na.rm = TRUE), 
+    `Deaths` = mean(Deaths, na.rm = TRUE)
+  )
 
+# ---- Find STPs/ICSs with worse-than-average waiting lists and covid statistics
+worst_performing_ics <- stp_data_plot %>% 
+  pivot_wider(names_from = Statistic, values_from = Rate) %>% 
+  
+  left_join(stp_data_averages, by = "Date") %>% 
+  
+  filter(Date == max(Date)) %>% 
+  filter(
+    `Waiting list size.x` > `Waiting list size.y` &
+      Admissions.x > Admissions.y & 
+      Deaths.x > Deaths.y
+  )
+
+worst_performing_ics$STP20NM
+
+# ---- Plots for each STP/ICS ----
 for (curr_stp in unique(stp_data_plot$Code)) {
   stp_name <- 
     stp_names %>% 
