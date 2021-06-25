@@ -32,6 +32,10 @@ admissions_dates <-
 
 names(admissions)[4:length(names(admissions))] <- admissions_dates
 
+admissions_england <- 
+  admissions %>% 
+  slice(1)
+
 # Remove unneeded rows...
 admissions <- 
   admissions %>% 
@@ -42,6 +46,24 @@ admissions <-
   filter(if_any(where(is.numeric), ~. != 0))
 
 # Calculate monthly totals
+#... for England
+admissions_england <- 
+  admissions_england %>% 
+  pivot_longer(where(is.numeric), names_to = "Date", values_to = "Admissions") %>% 
+  
+  mutate(
+    Month = Date %>% ymd %>% month %>% month.abb[.] %>% factor(levels = month.abb),
+    Year = Date %>% ymd %>% year
+  ) %>% 
+  
+  group_by(Year, Month, Code, Name) %>% 
+  summarise(Admissions = sum(Admissions, na.rm = TRUE)) %>% 
+  ungroup() %>% 
+  
+  mutate(Admissions_cumulative = cumsum(Admissions)) %>% 
+  select(-Code)
+
+#... for ICSs
 admissions <- 
   admissions %>% 
   pivot_longer(where(is.numeric), names_to = "Date", values_to = "Admissions") %>% 
@@ -86,6 +108,10 @@ deaths_dates <-
 
 names(deaths)[6:(6 + length(deaths_dates) - 1)] <- deaths_dates
 
+deaths_england <- 
+  deaths %>% 
+  slice(1)
+
 # Remove unneeded rows...
 deaths <- 
   deaths %>% 
@@ -117,6 +143,25 @@ deaths_ics <-
   group_by(stp_code) %>% 
   mutate(Deaths_cumulative = cumsum(Deaths))
 
+# Calculate England deaths
+deaths_england <- 
+  deaths_england %>% 
+  pivot_longer(starts_with("202"), names_to = "Date", values_to = "Deaths") %>% 
+  
+  mutate(
+    Month = Date %>% ymd %>% month %>% month.abb[.] %>% factor(levels = month.abb),
+    Year = Date %>% ymd %>% year
+  ) %>% 
+  
+  group_by(Year, Month, Code, Name) %>% 
+  summarise(Deaths = sum(Deaths, na.rm = TRUE)) %>% 
+  ungroup() %>% 
+  
+  mutate(Deaths_cumulative = cumsum(Deaths)) %>% 
+  select(-Code)
+
 # ---- Save data ----
 write_csv(admissions_ics, "data/covid-19-admissions-ics.csv")
+write_csv(admissions_england, "data/covid-19-admissions-england.csv")
 write_csv(deaths_ics, "data/covid-19-deaths-ics.csv")
+write_csv(deaths_england, "data/covid-19-deaths-england.csv")
