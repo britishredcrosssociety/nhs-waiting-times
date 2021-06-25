@@ -7,15 +7,33 @@ wales_waits <- read_csv("data/waiting lists for Wales.csv")
 sco_waits <- read_csv("data/waiting lists for Scotland.csv")
 ni_waits <- read_csv("data/waiting lists for NI.csv")
 
+
+
 # ---- Plot regional waiting times ----
 # Total numbers of people waiting more than a year in each region
 region_waits %>% 
-  filter(Year == 2021 & Month == "Mar" & `Treatment Function Name` == "Total") %>% 
+  filter(Year == 2021 & Month == "Apr" & `Treatment Function Name` == "Total") %>% 
   
   # Manually include stats from devolved nations
-  add_row(NHSER20NM = "Wales", `Total waiting > 52 weeks` = 94827) %>%  # source: https://statswales.gov.wales/Catalogue/Health-and-Social-Care/NHS-Hospital-Waiting-Times/Referral-to-Treatment/patientpathwayswaitingtostarttreatment-by-month-groupedweeks
-  add_row(NHSER20NM = "Scotland", `Total waiting > 52 weeks` = NA) %>%  # >52 week wait data not published by NHS Scotland
-  add_row(NHSER20NM = "Northern Ireland", `Total waiting > 52 weeks` = 58521) %>%  # see `download waiting list data - NI.R`
+  add_row(
+    NHSER20NM = "Wales", 
+    `Total waiting > 52 weeks` = wales_waits %>%
+      filter(Year == 2021 & Month == "Apr") %>% 
+      pull(`Total waiting > 52 weeks`)
+  ) %>%
+
+  add_row(
+    NHSER20NM = "Scotland", 
+    `Total waiting > 52 weeks` = NA
+  ) %>%
+  
+  add_row(
+    NHSER20NM = "Northern Ireland", 
+    `Total waiting > 52 weeks` = ni_waits %>% 
+      filter(Year == 2021 & Month == "Mar") %>% 
+      summarise(Total = sum(`Total waiting > 52 weeks`, na.rm = TRUE)) %>% 
+      pull(Total)
+  ) %>%
   
   ggplot(aes(x = reorder(NHSER20NM, `Total waiting > 52 weeks`, sum), y = `Total waiting > 52 weeks`)) +
   geom_col() +
@@ -35,12 +53,30 @@ ggsave("charts/NHS waiting times by region - more than a year.png", height = 100
 
 # Number of people waiting > 18 weeks
 region_waits %>% 
-  filter(Year == 2020 & Month == "Dec" & `Treatment Function Name` == "Total") %>% 
+  filter(Year == 2021 & Month == "Apr" & `Treatment Function Name` == "Total") %>% 
   
   # Manually include stats from devolved nations
-  add_row(NHSER20NM = "Wales", `Total waiting > 18 weeks` = 257620) %>%  # source: https://statswales.gov.wales/Catalogue/Health-and-Social-Care/NHS-Hospital-Waiting-Times/Referral-to-Treatment/patientpathwayswaitingtostarttreatment-by-month-groupedweeks
-  add_row(NHSER20NM = "Scotland", `Total waiting > 18 weeks` = 14684) %>%  # source: https://beta.isdscotland.org/find-publications-and-data/healthcare-resources/waiting-times/nhs-waiting-times-18-weeks-referral-to-treatment/
-  add_row(NHSER20NM = "Northern Ireland", `Total waiting > 18 weeks` = 40160) %>%  # see `download waiting list data - NI.R`
+  add_row(
+    NHSER20NM = "Wales", 
+    `Total waiting > 18 weeks` = wales_waits %>%
+      filter(Year == 2021 & Month == "Apr") %>% 
+      pull(`Total waiting > 18 weeks`)
+  ) %>%
+  
+  add_row(
+    NHSER20NM = "Scotland", 
+    `Total waiting > 18 weeks` = sco_waits %>%
+      filter(Year == 2021 & Month == "Mar") %>% 
+      pull(`Total waiting > 18 weeks`)
+  ) %>%
+  
+  add_row(
+    NHSER20NM = "Northern Ireland", 
+    `Total waiting > 18 weeks` = ni_waits %>% 
+      filter(Year == 2021 & Month == "Mar") %>% 
+      summarise(Total = sum(`Total waiting > 18 weeks`, na.rm = TRUE)) %>% 
+      pull(Total)
+  ) %>%
   
   ggplot(aes(x = reorder(NHSER20NM, `Total waiting > 18 weeks`, sum), y = `Total waiting > 18 weeks`)) +
   geom_col() +
@@ -133,7 +169,7 @@ uk_waits %>%
        x = NULL, y = "Number of people waiting more than a year", colour = NULL) +
   theme_classic() +
   theme(
-    legend.position = c(0.14, 0.9), 
+    legend.position = c(0.14, 0.95), 
     legend.direction = "horizontal",
     legend.background = element_blank()
   )
