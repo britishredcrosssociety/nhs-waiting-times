@@ -10,7 +10,7 @@ ni_waits <- read_csv("data/waiting lists for NI.csv")
 # ---- Plot regional waiting times ----
 # Total numbers of people waiting more than a year in each region
 region_waits %>% 
-  filter(Year == 2020 & Month == "Dec" & `Treatment Function Name` == "Total") %>% 
+  filter(Year == 2021 & Month == "Mar" & `Treatment Function Name` == "Total") %>% 
   
   # Manually include stats from devolved nations
   add_row(NHSER20NM = "Wales", `Total waiting > 52 weeks` = 94827) %>%  # source: https://statswales.gov.wales/Catalogue/Health-and-Social-Care/NHS-Hospital-Waiting-Times/Referral-to-Treatment/patientpathwayswaitingtostarttreatment-by-month-groupedweeks
@@ -115,7 +115,7 @@ uk_waits <-
     
     # Blank data for Scotland since 52+ week waits data isn't available
     # sco_waits %>% mutate(Region = "Scotland") %>% select(Year, Month, Region, `Total waiting > 52 weeks` = `Total waiting > 18 weeks`),
-    expand_grid(Year = c(2019, 2020), Month = month.abb, Region = "Scotland", `Total waiting > 52 weeks` = NA)
+    expand_grid(Year = c(2019, 2020, 2021), Month = month.abb, Region = "Scotland", `Total waiting > 52 weeks` = NA)
   )
  
 uk_waits %>% 
@@ -132,7 +132,11 @@ uk_waits %>%
   labs(caption = "Source: I&I analysis of NHSE, NHSW, NHS Scotland and NHS NI data",
        x = NULL, y = "Number of people waiting more than a year", colour = NULL) +
   theme_classic() +
-  theme(legend.position = c(0.11, 0.9), legend.direction = "horizontal")
+  theme(
+    legend.position = c(0.14, 0.9), 
+    legend.direction = "horizontal",
+    legend.background = element_blank()
+  )
 
 ggsave("charts/NHS waiting list over time by region - more than 52 weeks.png", height = 90, width = 205, units = "mm")
 
