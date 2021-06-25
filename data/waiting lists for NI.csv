@@ -179,6 +179,51 @@ Year,Month,Specialty,Total waiting > 52 weeks,Total waiting > 18 weeks
 2019,Sep,Thoracic Medicine,1424,4060
 2019,Sep,Thoracic Surgery,126,4
 2019,Sep,Urology,3756,2287
+2020,Dec,Accident & Emergency,0,0
+2020,Dec,Anaesthetics,1,1
+2020,Dec,Cardiac Surgery,8,0
+2020,Dec,Cardiology,2083,3642
+2020,Dec,Chemical Pathology,3,27
+2020,Dec,Clinical Genetics,88,289
+2020,Dec,Clinical Oncology,0,0
+2020,Dec,Dental Medicine Specialties,454,818
+2020,Dec,Dermatology,736,685
+2020,Dec,Endocrinology,178,559
+2020,Dec,ENT,9486,628
+2020,Dec,Gastroenterology,2701,1952
+2020,Dec,General Medicine,2232,2673
+2020,Dec,General Surgery,12325,0
+2020,Dec,Genito-Urinary Medicine,0,0
+2020,Dec,Geriatric Medicine,456,793
+2020,Dec,GP Other,82,0
+2020,Dec,Gynaecology,3517,84
+2020,Dec,Haematology (Clinical),421,800
+2020,Dec,Infectious Diseases,111,152
+2020,Dec,Joint Consultant Clinics,0,0
+2020,Dec,Learning Disability,18,44
+2020,Dec,Medical Oncology,2,4
+2020,Dec,Nephrology,18,76
+2020,Dec,Neurology,132,1865
+2020,Dec,Neurosurgery,307,446
+2020,Dec,Old Age Psychiatry,203,622
+2020,Dec,Ophthalmology,4532,280
+2020,Dec,Oral Surgery,315,859
+2020,Dec,Orthodontics,242,570
+2020,Dec,Paediatric Dentistry,326,474
+2020,Dec,Paediatric Neurology,5,106
+2020,Dec,Paediatric Surgery,518,553
+2020,Dec,Paediatrics,843,2511
+2020,Dec,Pain Management,1389,2134
+2020,Dec,Palliative Medicine,0,0
+2020,Dec,Plastic Surgery,1930,1088
+2020,Dec,Radiology,39,42
+2020,Dec,Rehabilitation,21,28
+2020,Dec,Restorative Dentistry,812,1300
+2020,Dec,Rheumatology,1,3039
+2020,Dec,T & O Surgery,19686,10269
+2020,Dec,Thoracic Medicine,1068,3633
+2020,Dec,Thoracic Surgery,228,9
+2020,Dec,Urology,6021,3532
 2020,Jun,Anaesthetics,1,0
 2020,Jun,Cardiac Surgery,0,3
 2020,Jun,Cardiology,1900,2692
@@ -312,3 +357,47 @@ Year,Month,Specialty,Total waiting > 52 weeks,Total waiting > 18 weeks
 2020,Sep,Thoracic Medicine,868,2929
 2020,Sep,Thoracic Surgery,213,28
 2020,Sep,Urology,4349,2115
+2021,Mar,Cardiac Surgery,28,1
+2021,Mar,Cardiology,2404,3358
+2021,Mar,Chemical Pathology,5,31
+2021,Mar,Clinical Genetics,0,134
+2021,Mar,Clinical Oncology,0,1
+2021,Mar,Dental Medicine Specialties,530,712
+2021,Mar,Dermatology,697,1109
+2021,Mar,Endocrinology,332,738
+2021,Mar,ENT,10281,1943
+2021,Mar,Gastroenterology,3678,1915
+2021,Mar,General Medicine,3291,2713
+2021,Mar,General Surgery,15477,0
+2021,Mar,Genito-Urinary Medicine,0,0
+2021,Mar,Geriatric Medicine,552,873
+2021,Mar,GP Other,347,0
+2021,Mar,Gynaecology,4534,279
+2021,Mar,Haematology (Clinical),550,857
+2021,Mar,Infectious Diseases,123,154
+2021,Mar,Joint Consultant Clinics,0,0
+2021,Mar,Learning Disability,30,55
+2021,Mar,Medical Oncology,2,4
+2021,Mar,Nephrology,34,105
+2021,Mar,Neurology,154,1480
+2021,Mar,Neurosurgery,389,450
+2021,Mar,Old Age Psychiatry,347,775
+2021,Mar,Ophthalmology,5898,1152
+2021,Mar,Oral Surgery,519,1460
+2021,Mar,Orthodontics,448,668
+2021,Mar,Paediatric Dentistry,360,386
+2021,Mar,Paediatric Neurology,42,141
+2021,Mar,Paediatric Surgery,652,585
+2021,Mar,Paediatrics,959,2166
+2021,Mar,Pain Management,1820,1897
+2021,Mar,Palliative Medicine,0,1
+2021,Mar,Plastic Surgery,2293,877
+2021,Mar,Radiology,42,26
+2021,Mar,Rehabilitation,21,32
+2021,Mar,Restorative Dentistry,116,255
+2021,Mar,Rheumatology,110,2676
+2021,Mar,T & O Surgery,15642,911
+2021,Mar,Thoracic Medicine,1661,3874
+2021,Mar,Thoracic Surgery,255,14
+2021,Mar,Urology,5398,1658
+2021,Mar,NA,0,0

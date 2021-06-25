@@ -1,11 +1,18 @@
 library(tidyverse)
 
-# Manually take numbers from the Excel file linked to here: https://beta.isdscotland.org/find-publications-and-data/healthcare-resources/waiting-times/nhs-waiting-times-18-weeks-referral-to-treatment/
+# Manually take numbers from the "Tabel 1 All RTT Data" worksheet in the Excel file linked to here: https://beta.isdscotland.org/find-publications-and-data/healthcare-resources/waiting-times/nhs-waiting-times-18-weeks-referral-to-treatment/
 tribble(
   ~Year, ~Month, ~`Total waiting > 18 weeks`,
-  2020, "Sep", 14684,
-  2020, "Aug", 12589,
-  2020, "Jul", 9701,
+  2021, "Mar", 17651,
+  2021, "Feb", 13113,
+  2021, "Jan", 12390,
+  
+  2020, "Dec", 14714,
+  2020, "Nov", 17455,
+  2020, "Oct", 16345,
+  2020, "Sep", 17219,
+  2020, "Aug", 14725,
+  2020, "Jul", 11875,
   2020, "Jun", 8463,
   2020, "May", 5353,
   2020, "Apr", 4453,

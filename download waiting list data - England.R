@@ -40,7 +40,8 @@ nhs_region_lookup <- tribble(
 # ---- Download waiting list data ----
 # URLs for full waiting list data by month from https://www.england.nhs.uk/statistics/statistical-work-areas/rtt-waiting-times
 urls <- c(
-  mar_20 = "https://www.england.nhs.uk/statistics/wp-content/uploads/sites/2/2021/05/Full-CSV-data-file-Mar21-ZIP-2888K-76325.zip",
+  apr_21 = "https://www.england.nhs.uk/statistics/wp-content/uploads/sites/2/2021/06/Full-CSV-data-file-Apr21-ZIP-3110K-54792.zip",
+  mar_21 = "https://www.england.nhs.uk/statistics/wp-content/uploads/sites/2/2021/05/Full-CSV-data-file-Mar21-ZIP-2888K-76325.zip",
   feb_21 = "https://www.england.nhs.uk/statistics/wp-content/uploads/sites/2/2021/04/Full-CSV-data-file-Feb21-ZIP-2739K-25692.zip",
   jan_21 = "https://www.england.nhs.uk/statistics/wp-content/uploads/sites/2/2021/03/Full-CSV-data-file-Jan21-ZIP-2714K-24158.zip",
   
