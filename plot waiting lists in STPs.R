@@ -3,6 +3,7 @@
 ##
 library(tidyverse)
 library(geographr)
+library(ggfittext)
 
 # ---- Compare STPs as of latest month ----
 #' Plot waiting list sizes where people waited over a year for treatment in each STP/ICS
@@ -34,7 +35,7 @@ plot_waits_latest_month <- function(
   # ---- Compare STPs/ICSs ----
   stp_waits <- 
     stp_waits %>% 
-    filter(Year == 2021 & Month == "Feb" & `Treatment Function Name` == "Total") %>% 
+    filter(Year == year & Month == month & `Treatment Function Name` == "Total") %>% 
     
     left_join(stp_names, by = c("Provider Parent Org Code" = "STP20CDH")) %>% 
     left_join(population_stp, by = c("STP20CD" = "stp_code")) %>% 
@@ -46,16 +47,16 @@ plot_waits_latest_month <- function(
   if (is_null(highlight_stp)) {
     stp_waits <- 
       stp_waits %>% 
-      mutate(bar_label = NA,
+      mutate(bar_label = value_to_plot,
              bar_highlight = "no")
     
   } else {
     stp_waits <- 
       stp_waits %>% 
-      mutate(bar_label = ifelse(str_detect(STP20NM, highlight_stp), proportion_waiting, NA),
+      mutate(bar_label = ifelse(str_detect(STP20NM, highlight_stp), value_to_plot, NA),
              bar_highlight = ifelse(str_detect(STP20NM, highlight_stp), "yes", "no"))
   }
-  
+
   plt_output <- 
     stp_waits %>% 
     ggplot(aes(x = reorder(STP20NM, value_to_plot, sum), y = value_to_plot)) +
@@ -64,13 +65,13 @@ plot_waits_latest_month <- function(
   if (population_percentage) {
     plt_output <- 
       plt_output +
-      geom_text(aes(label = scales::percent(bar_label)), hjust = 1.3, colour = "white") +
+      geom_bar_text(mapping = aes(label = scales::percent(bar_label))) +
       scale_y_continuous(labels = scales::percent, position = "right")
     
   } else {
     plt_output <- 
       plt_output +
-      geom_text(aes(label = scales::comma(bar_label)), hjust = 1.3, colour = "white") +
+      geom_bar_text(aes(label = scales::comma(bar_label))) +
       scale_y_continuous(labels = scales::comma, position = "right")
   }
   
@@ -78,7 +79,7 @@ plot_waits_latest_month <- function(
     plt_output +
     coord_flip() +
     scale_fill_manual(values = c("yes" = "#D0021B", "no" = "#5C747A"), guide = FALSE) +
-    labs(caption = "Source: British Red Cross analysis of NHSE data as of February 2021",
+    labs(caption = glue::glue("Source: British Red Cross analysis of NHSE data as of {month} {year}"),
          x = NULL, y = NULL) +
     theme_classic() +
     theme(
@@ -100,3 +101,11 @@ plt_harrogate$plt +
 
 ggsave("charts/West Yorkshire and Harrogate waiting times - more than a year - proportion.png", height = 150, width = 350, units = "mm")
 
+# Plot without highlighting any particular bar
+ics <- plot_waits_latest_month(year = 2021, month = "Apr", population_percentage = TRUE)
+ics$plt + labs(title = "Percentage of people waiting over a year for treatment")
+ggsave("charts/ICS waiting times - more than a year - proportion.png", height = 150, width = 350, units = "mm")
+
+ics <- plot_waits_latest_month(year = 2021, month = "Apr", population_percentage = FALSE)
+ics$plt + labs(title = "Number of people waiting over a year for treatment")
+ggsave("charts/ICS waiting times - more than a year - number.png", height = 150, width = 350, units = "mm")
