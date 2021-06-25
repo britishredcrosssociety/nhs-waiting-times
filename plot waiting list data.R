@@ -7,8 +7,6 @@ wales_waits <- read_csv("data/waiting lists for Wales.csv")
 sco_waits <- read_csv("data/waiting lists for Scotland.csv")
 ni_waits <- read_csv("data/waiting lists for NI.csv")
 
-
-
 # ---- Plot regional waiting times ----
 # Total numbers of people waiting more than a year in each region
 region_waits %>% 
@@ -49,7 +47,7 @@ region_waits %>%
     axis.ticks = element_blank()
   )
 
-ggsave("charts/NHS waiting times by region - more than a year.png", height = 100, width = 120, units = "mm")
+ggsave("charts/NHS waiting list by region - more than a year.png", height = 100, width = 120, units = "mm")
 
 # Number of people waiting > 18 weeks
 region_waits %>% 
@@ -92,7 +90,7 @@ region_waits %>%
     axis.ticks = element_blank()
   )
 
-ggsave("charts/NHS waiting times by region - more than 18 weeks.png", height = 100, width = 120, units = "mm")
+ggsave("charts/NHS waiting list by region - more than 18 weeks.png", height = 100, width = 120, units = "mm")
 
 # ---- Plot England waiting list sizes over time ----
 region_waits %>% 
@@ -115,26 +113,6 @@ region_waits %>%
   theme_classic()
 
 ggsave("charts/NHS waiting list over time - more than 52 weeks.png", height = 100, width = 120, units = "mm")
-
-# ---- Plot regional waiting list sizes over time in England ----
-region_waits %>% 
-  filter(`Treatment Function Name` == "Total") %>% 
-  mutate(Year = factor(Year),
-         Month = factor(Month, levels = month.abb)) %>% 
-  
-  ggplot(aes(x = Month, y = `Total waiting > 52 weeks`)) +
-  geom_line(aes(colour = Year, group = Year)) +
-  geom_point(aes(colour = Year)) +
-  
-  facet_wrap(~NHSER20NM, nrow = 2) +
-  scale_x_discrete(labels = c("J","F","M","A","M","J","J","A","S","O","N","D")) +
-  scale_y_continuous(labels = scales::comma) +
-  labs(caption = "Source: I&I analysis of NHSE data",
-       x = NULL, y = "Number of people waiting more than a year") +
-  theme_classic() +
-  theme(legend.position = c(0.85, 0.2))
-
-ggsave("charts/NHS waiting list over time by region - more than 52 weeks.png", height = 80, width = 170, units = "mm")
 
 # ---- Plot regional waiting list sizes over time in UK ----
 ni_waits_total <- 
@@ -178,7 +156,7 @@ ggsave("charts/NHS waiting list over time by region - more than 52 weeks.png", h
 
 # ---- Types of treatment ----
 region_waits %>% 
-  filter(Year == 2020 & Month == "Dec" & `Treatment Function Name` != "Total") %>%
+  filter(Year == 2021 & Month == "Apr" & `Treatment Function Name` != "Total") %>%
   
   group_by(`Treatment Function Name`) %>% 
   summarise(`Total waiting > 52 weeks` = sum(`Total waiting > 52 weeks`, na.rm = TRUE)) %>% 
@@ -197,12 +175,12 @@ region_waits %>%
     axis.ticks = element_blank()
   )
 
-ggsave("charts/NHS waiting times by type of treatment - more than a year.png", height = 120, width = 120, units = "mm")
+ggsave("charts/NHS waiting list by type of treatment - more than a year.png", height = 120, width = 120, units = "mm")
 
 # ---- Types of treatment by region ----
 # Plot top three treatments in each region
 region_waits %>% 
-  filter(Year == 2020 & Month == "Dec" & `Treatment Function Name` != "Total") %>%
+  filter(Year == 2021 & Month == "Apr" & `Treatment Function Name` != "Total") %>%
   
   group_by(NHSER20NM, `Treatment Function Name`) %>% 
   summarise(`Total waiting > 52 weeks` = sum(`Total waiting > 52 weeks`, na.rm = TRUE)) %>% 
@@ -228,4 +206,4 @@ region_waits %>%
     axis.ticks = element_blank()
   )
 
-ggsave("charts/NHS waiting times by type of treatment by region - more than a year.png", height = 120, width = 170, units = "mm")
+ggsave("charts/NHS waiting list by type of treatment by region - more than a year.png", height = 120, width = 170, units = "mm")
