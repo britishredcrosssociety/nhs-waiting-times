@@ -108,4 +108,4 @@ ggsave("charts/ICS waiting times - more than a year - proportion.png", height = 
 
 ics <- plot_waits_latest_month(year = 2021, month = "Apr", population_percentage = FALSE)
 ics$plt + labs(title = "Number of people waiting over a year for treatment")
-ggsave("charts/ICS waiting times - more than a year - number.png", height = 150, width = 350, units = "mm")
+ggsave("charts/ICS waiting times - more than a year - number.png", height = 150, width = 250, units = "mm")
