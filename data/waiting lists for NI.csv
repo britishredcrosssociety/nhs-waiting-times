@@ -1,403 +1,403 @@
 Year,Month,Specialty,Total waiting > 52 weeks,Total waiting > 18 weeks
-2019,Dec,Anaesthetics,1,0
+2019,Dec,Anaesthetics,1,1
 2019,Dec,Audiological,0,0
-2019,Dec,Cardiac Surgery,0,0
-2019,Dec,Cardiology,1053,2262
+2019,Dec,Cardiac Surgery,0,43
+2019,Dec,Cardiology,1053,5510
 2019,Dec,Chemical Pathology,1,31
 2019,Dec,Clinical Genetics,21,741
 2019,Dec,Clinical Oncology,0,0
 2019,Dec,Dental Medicine Specialties,0,320
-2019,Dec,Dermatology,271,566
-2019,Dec,Endocrinology,90,223
-2019,Dec,ENT,5780,750
-2019,Dec,Gastroenterology,1766,3431
-2019,Dec,General Medicine,498,1694
-2019,Dec,General Surgery,6132,955
+2019,Dec,Dermatology,8812,16252
+2019,Dec,Endocrinology,90,343
+2019,Dec,ENT,18990,34580
+2019,Dec,Gastroenterology,5474,11386
+2019,Dec,General Medicine,5231,9369
+2019,Dec,General Surgery,11944,30529
 2019,Dec,Genito-Urinary Medicine,0,0
 2019,Dec,Geriatric Medicine,129,539
-2019,Dec,GP Other,0,0
-2019,Dec,Gynaecology,1614,858
-2019,Dec,Haematology (Clinical),279,646
+2019,Dec,GP Other,0,149
+2019,Dec,Gynaecology,6232,13643
+2019,Dec,Haematology (Clinical),279,648
 2019,Dec,Infectious Diseases,33,93
-2019,Dec,Joint Consultant Clinics,1,0
+2019,Dec,Joint Consultant Clinics,1,4
 2019,Dec,Learning Disability,12,35
 2019,Dec,Medical Oncology,0,4
-2019,Dec,Nephrology,3,74
-2019,Dec,Neurology,51,2714
-2019,Dec,Neurosurgery,132,243
+2019,Dec,Nephrology,3,79
+2019,Dec,Neurology,12105,16007
+2019,Dec,Neurosurgery,132,490
 2019,Dec,Old Age Psychiatry,8,178
-2019,Dec,Ophthalmology,2973,2187
-2019,Dec,Oral Surgery,174,52
+2019,Dec,Ophthalmology,15944,30213
+2019,Dec,Oral Surgery,7228,10733
 2019,Dec,Orthodontics,0,240
-2019,Dec,Paediatric Dentistry,43,247
-2019,Dec,Paediatric Neurology,1,70
-2019,Dec,Paediatric Surgery,162,114
-2019,Dec,Paediatrics,514,2275
-2019,Dec,Pain Management,2290,4417
+2019,Dec,Paediatric Dentistry,43,329
+2019,Dec,Paediatric Neurology,1,97
+2019,Dec,Paediatric Surgery,162,632
+2019,Dec,Paediatrics,3184,7476
+2019,Dec,Pain Management,3526,7004
 2019,Dec,Palliative Medicine,0,0
-2019,Dec,Plastic Surgery,1099,0
-2019,Dec,Radiology,17,10
+2019,Dec,Plastic Surgery,2517,4560
+2019,Dec,Radiology,17,35
 2019,Dec,Rehabilitation,17,37
-2019,Dec,Restorative Dentistry,6,562
-2019,Dec,Rheumatology,1431,4467
-2019,Dec,T & O Surgery,7173,1
-2019,Dec,Thoracic Medicine,1280,3922
-2019,Dec,Thoracic Surgery,152,4
-2019,Dec,Urology,4318,3676
-2019,Jun,Anaesthetics,15,38
+2019,Dec,Restorative Dentistry,6,605
+2019,Dec,Rheumatology,8632,11674
+2019,Dec,T & O Surgery,18121,31264
+2019,Dec,Thoracic Medicine,3137,5816
+2019,Dec,Thoracic Surgery,152,255
+2019,Dec,Urology,6204,10876
+2019,Jun,Anaesthetics,15,39
 2019,Jun,Audiological,0,2
-2019,Jun,Cardiac Surgery,0,0
-2019,Jun,Cardiology,775,3486
+2019,Jun,Cardiac Surgery,0,50
+2019,Jun,Cardiology,775,3992
 2019,Jun,Chemical Pathology,0,7
 2019,Jun,Clinical Genetics,0,547
 2019,Jun,Clinical Oncology,0,9
 2019,Jun,Dental Medicine Specialties,0,240
-2019,Jun,Dermatology,148,503
-2019,Jun,Endocrinology,83,150
-2019,Jun,ENT,4703,591
-2019,Jun,Gastroenterology,1099,2903
-2019,Jun,General Medicine,488,2185
-2019,Jun,General Surgery,4955,299
+2019,Jun,Dermatology,7870,14766
+2019,Jun,Endocrinology,83,167
+2019,Jun,ENT,17905,26942
+2019,Jun,Gastroenterology,5210,9503
+2019,Jun,General Medicine,4962,7351
+2019,Jun,General Surgery,10351,17859
 2019,Jun,Genito-Urinary Medicine,0,0
 2019,Jun,Geriatric Medicine,116,596
-2019,Jun,GP Other,1,0
-2019,Jun,Gynaecology,1338,490
+2019,Jun,GP Other,1,106
+2019,Jun,Gynaecology,5659,9763
 2019,Jun,Haematology (Clinical),136,498
 2019,Jun,Infectious Diseases,23,92
-2019,Jun,Joint Consultant Clinics,0,0
+2019,Jun,Joint Consultant Clinics,0,18
 2019,Jun,Learning Disability,15,37
 2019,Jun,Medical Oncology,0,1
-2019,Jun,Nephrology,2,41
-2019,Jun,Neurology,20,2970
-2019,Jun,Neurosurgery,95,110
+2019,Jun,Nephrology,2,50
+2019,Jun,Neurology,11805,16337
+2019,Jun,Neurosurgery,95,175
 2019,Jun,Old Age Psychiatry,0,45
-2019,Jun,Ophthalmology,1768,2099
-2019,Jun,Oral Surgery,183,49
+2019,Jun,Ophthalmology,12828,23214
+2019,Jun,Oral Surgery,8168,11592
 2019,Jun,Orthodontics,0,150
-2019,Jun,Paediatric Dentistry,105,251
-2019,Jun,Paediatric Neurology,0,38
-2019,Jun,Paediatric Surgery,170,81
-2019,Jun,Paediatrics,378,1726
-2019,Jun,Pain Management,1727,4216
+2019,Jun,Paediatric Dentistry,105,308
+2019,Jun,Paediatric Neurology,0,55
+2019,Jun,Paediatric Surgery,170,267
+2019,Jun,Paediatrics,2713,5834
+2019,Jun,Pain Management,2799,5683
 2019,Jun,Palliative Medicine,0,3
-2019,Jun,Plastic Surgery,947,1
-2019,Jun,Radiology,18,1
+2019,Jun,Plastic Surgery,2739,3585
+2019,Jun,Radiology,18,8
 2019,Jun,Rehabilitation,9,48
-2019,Jun,Restorative Dentistry,2,548
-2019,Jun,Rheumatology,1174,4344
-2019,Jun,T & O Surgery,6896,889
-2019,Jun,Thoracic Medicine,1475,3964
-2019,Jun,Thoracic Surgery,112,8
-2019,Jun,Urology,3481,2133
-2019,Mar,Anaesthetics,0,0
+2019,Jun,Restorative Dentistry,2,581
+2019,Jun,Rheumatology,7117,10307
+2019,Jun,T & O Surgery,19019,20888
+2019,Jun,Thoracic Medicine,3126,5621
+2019,Jun,Thoracic Surgery,112,49
+2019,Jun,Urology,5634,6570
+2019,Mar,Anaesthetics,0,3
 2019,Mar,Audiological,0,0
-2019,Mar,Cardiac Surgery,0,1
-2019,Mar,Cardiology,425,1848
+2019,Mar,Cardiac Surgery,0,62
+2019,Mar,Cardiology,425,3389
 2019,Mar,Chemical Pathology,0,2
 2019,Mar,Clinical Genetics,0,381
 2019,Mar,Clinical Oncology,0,0
 2019,Mar,Dental Medicine Specialties,0,189
-2019,Mar,Dermatology,74,397
-2019,Mar,Endocrinology,63,159
-2019,Mar,ENT,4122,490
-2019,Mar,Gastroenterology,838,2859
-2019,Mar,General Medicine,581,2270
-2019,Mar,General Surgery,4280,412
+2019,Mar,Dermatology,6469,13458
+2019,Mar,Endocrinology,63,162
+2019,Mar,ENT,16163,26115
+2019,Mar,Gastroenterology,4780,8864
+2019,Mar,General Medicine,5035,7416
+2019,Mar,General Surgery,9215,17396
 2019,Mar,Genito-Urinary Medicine,0,0
 2019,Mar,Geriatric Medicine,63,515
-2019,Mar,GP Other,1,0
-2019,Mar,Gynaecology,1261,1066
-2019,Mar,Haematology (Clinical),62,475
+2019,Mar,GP Other,1,70
+2019,Mar,Gynaecology,5324,9179
+2019,Mar,Haematology (Clinical),62,476
 2019,Mar,Infectious Diseases,18,93
-2019,Mar,Joint Consultant Clinics,0,0
+2019,Mar,Joint Consultant Clinics,0,1
 2019,Mar,Learning Disability,14,52
 2019,Mar,Medical Oncology,0,0
-2019,Mar,Nephrology,2,35
-2019,Mar,Neurology,16,3095
-2019,Mar,Neurosurgery,71,86
+2019,Mar,Nephrology,2,47
+2019,Mar,Neurology,11265,16175
+2019,Mar,Neurosurgery,71,158
 2019,Mar,Old Age Psychiatry,1,54
-2019,Mar,Ophthalmology,1571,705
-2019,Mar,Oral Surgery,166,17
+2019,Mar,Ophthalmology,12159,21023
+2019,Mar,Oral Surgery,7599,11196
 2019,Mar,Orthodontics,0,146
-2019,Mar,Paediatric Dentistry,110,267
-2019,Mar,Paediatric Neurology,0,44
-2019,Mar,Paediatric Surgery,166,63
-2019,Mar,Paediatrics,1206,2545
-2019,Mar,Pain Management,2274,5316
+2019,Mar,Paediatric Dentistry,110,314
+2019,Mar,Paediatric Neurology,0,60
+2019,Mar,Paediatric Surgery,166,221
+2019,Mar,Paediatrics,2418,5512
+2019,Mar,Pain Management,2274,5765
 2019,Mar,Palliative Medicine,0,2
-2019,Mar,Plastic Surgery,887,0
-2019,Mar,Radiology,16,0
+2019,Mar,Plastic Surgery,2834,3864
+2019,Mar,Radiology,16,3
 2019,Mar,Rehabilitation,5,37
-2019,Mar,Restorative Dentistry,1,488
-2019,Mar,Rheumatology,1174,4607
-2019,Mar,T & O Surgery,6639,940
-2019,Mar,Thoracic Medicine,1506,4072
-2019,Mar,Thoracic Surgery,110,1
-2019,Mar,Urology,3035,3037
-2019,Sep,Anaesthetics,0,0
-2019,Sep,Cardiac Surgery,1,1
-2019,Sep,Cardiology,904,4040
+2019,Mar,Restorative Dentistry,1,515
+2019,Mar,Rheumatology,6405,9901
+2019,Mar,T & O Surgery,19128,21461
+2019,Mar,Thoracic Medicine,3001,5574
+2019,Mar,Thoracic Surgery,110,42
+2019,Mar,Urology,5004,6444
+2019,Sep,Anaesthetics,0,1
+2019,Sep,Cardiac Surgery,1,54
+2019,Sep,Cardiology,904,4958
 2019,Sep,Chemical Pathology,0,16
 2019,Sep,Child & Adolescent Psychiatry,0,0
 2019,Sep,Clinical Genetics,1,646
 2019,Sep,Clinical Oncology,0,0
 2019,Sep,Dental Medicine Specialties,0,305
-2019,Sep,Dermatology,177,529
-2019,Sep,Endocrinology,88,174
-2019,Sep,ENT,5248,662
-2019,Sep,Gastroenterology,1446,3046
-2019,Sep,General Medicine,473,1499
-2019,Sep,General Surgery,5409,541
+2019,Sep,Dermatology,8806,15770
+2019,Sep,Endocrinology,88,285
+2019,Sep,ENT,18429,34306
+2019,Sep,Gastroenterology,4641,10189
+2019,Sep,General Medicine,5084,8540
+2019,Sep,General Surgery,11152,28884
 2019,Sep,Genito-Urinary Medicine,0,0
 2019,Sep,Geriatric Medicine,205,723
-2019,Sep,GP Other,0,0
-2019,Sep,Gynaecology,1447,719
-2019,Sep,Haematology (Clinical),213,561
+2019,Sep,GP Other,0,155
+2019,Sep,Gynaecology,5955,12996
+2019,Sep,Haematology (Clinical),213,564
 2019,Sep,Infectious Diseases,29,100
-2019,Sep,Joint Consultant Clinics,0,1
+2019,Sep,Joint Consultant Clinics,0,8
 2019,Sep,Learning Disability,12,39
 2019,Sep,Medical Oncology,0,2
-2019,Sep,Nephrology,4,79
-2019,Sep,Neurology,35,2915
-2019,Sep,Neurosurgery,89,168
+2019,Sep,Nephrology,4,88
+2019,Sep,Neurology,11541,15597
+2019,Sep,Neurosurgery,89,394
 2019,Sep,Old Age Psychiatry,0,163
-2019,Sep,Ophthalmology,2334,2070
-2019,Sep,Oral Surgery,193,36
+2019,Sep,Ophthalmology,13289,27757
+2019,Sep,Oral Surgery,8576,12196
 2019,Sep,Orthodontics,0,212
-2019,Sep,Paediatric Dentistry,88,287
-2019,Sep,Paediatric Neurology,0,48
-2019,Sep,Paediatric Surgery,155,115
-2019,Sep,Paediatrics,448,2335
-2019,Sep,Pain Management,1982,4338
+2019,Sep,Paediatric Dentistry,88,386
+2019,Sep,Paediatric Neurology,0,73
+2019,Sep,Paediatric Surgery,155,619
+2019,Sep,Paediatrics,2983,7301
+2019,Sep,Pain Management,3164,7012
 2019,Sep,Palliative Medicine,0,1
-2019,Sep,Plastic Surgery,1032,0
-2019,Sep,Radiology,17,3
+2019,Sep,Plastic Surgery,2704,4808
+2019,Sep,Radiology,17,28
 2019,Sep,Rehabilitation,12,39
-2019,Sep,Restorative Dentistry,0,597
-2019,Sep,Rheumatology,1246,4594
-2019,Sep,T & O Surgery,7114,7
-2019,Sep,Thoracic Medicine,1424,4060
-2019,Sep,Thoracic Surgery,126,4
-2019,Sep,Urology,3756,2287
+2019,Sep,Restorative Dentistry,0,629
+2019,Sep,Rheumatology,7815,11169
+2019,Sep,T & O Surgery,19036,32365
+2019,Sep,Thoracic Medicine,3188,5863
+2019,Sep,Thoracic Surgery,126,231
+2019,Sep,Urology,5886,10960
 2020,Dec,Accident & Emergency,0,0
-2020,Dec,Anaesthetics,1,1
-2020,Dec,Cardiac Surgery,8,0
-2020,Dec,Cardiology,2083,3642
+2020,Dec,Anaesthetics,1,2
+2020,Dec,Cardiac Surgery,8,159
+2020,Dec,Cardiology,3525,7749
 2020,Dec,Chemical Pathology,3,27
 2020,Dec,Clinical Genetics,88,289
 2020,Dec,Clinical Oncology,0,0
 2020,Dec,Dental Medicine Specialties,454,818
-2020,Dec,Dermatology,736,685
-2020,Dec,Endocrinology,178,559
-2020,Dec,ENT,9486,628
-2020,Dec,Gastroenterology,2701,1952
-2020,Dec,General Medicine,2232,2673
-2020,Dec,General Surgery,12325,0
+2020,Dec,Dermatology,14685,21343
+2020,Dec,Endocrinology,178,703
+2020,Dec,ENT,34810,46315
+2020,Dec,Gastroenterology,9616,15859
+2020,Dec,General Medicine,8046,12736
+2020,Dec,General Surgery,29378,47514
 2020,Dec,Genito-Urinary Medicine,0,0
 2020,Dec,Geriatric Medicine,456,793
-2020,Dec,GP Other,82,0
-2020,Dec,Gynaecology,3517,84
-2020,Dec,Haematology (Clinical),421,800
+2020,Dec,GP Other,82,492
+2020,Dec,Gynaecology,11784,21517
+2020,Dec,Haematology (Clinical),421,802
 2020,Dec,Infectious Diseases,111,152
 2020,Dec,Joint Consultant Clinics,0,0
 2020,Dec,Learning Disability,18,44
 2020,Dec,Medical Oncology,2,4
-2020,Dec,Nephrology,18,76
-2020,Dec,Neurology,132,1865
-2020,Dec,Neurosurgery,307,446
+2020,Dec,Nephrology,18,169
+2020,Dec,Neurology,14222,17865
+2020,Dec,Neurosurgery,307,693
 2020,Dec,Old Age Psychiatry,203,622
-2020,Dec,Ophthalmology,4532,280
-2020,Dec,Oral Surgery,315,859
+2020,Dec,Ophthalmology,25107,34927
+2020,Dec,Oral Surgery,9805,12065
 2020,Dec,Orthodontics,242,570
-2020,Dec,Paediatric Dentistry,326,474
-2020,Dec,Paediatric Neurology,5,106
-2020,Dec,Paediatric Surgery,518,553
-2020,Dec,Paediatrics,843,2511
-2020,Dec,Pain Management,1389,2134
+2020,Dec,Paediatric Dentistry,326,562
+2020,Dec,Paediatric Neurology,5,114
+2020,Dec,Paediatric Surgery,518,1194
+2020,Dec,Paediatrics,5851,10393
+2020,Dec,Pain Management,6114,8452
 2020,Dec,Palliative Medicine,0,0
-2020,Dec,Plastic Surgery,1930,1088
-2020,Dec,Radiology,39,42
+2020,Dec,Plastic Surgery,4502,6217
+2020,Dec,Radiology,39,88
 2020,Dec,Rehabilitation,21,28
-2020,Dec,Restorative Dentistry,812,1300
-2020,Dec,Rheumatology,1,3039
-2020,Dec,T & O Surgery,19686,10269
-2020,Dec,Thoracic Medicine,1068,3633
-2020,Dec,Thoracic Surgery,228,9
-2020,Dec,Urology,6021,3532
-2020,Jun,Anaesthetics,1,0
-2020,Jun,Cardiac Surgery,0,3
-2020,Jun,Cardiology,1900,2692
+2020,Dec,Restorative Dentistry,812,1421
+2020,Dec,Rheumatology,10469,13768
+2020,Dec,T & O Surgery,25845,37067
+2020,Dec,Thoracic Medicine,5213,7816
+2020,Dec,Thoracic Surgery,228,280
+2020,Dec,Urology,10195,14484
+2020,Jun,Anaesthetics,1,1
+2020,Jun,Cardiac Surgery,0,142
+2020,Jun,Cardiology,1900,8318
 2020,Jun,Chemical Pathology,1,77
 2020,Jun,Clinical Genetics,195,742
-2020,Jun,Clinical Oncology,0,0
+2020,Jun,Clinical Oncology,0,1
 2020,Jun,Dental Medicine Specialties,2,707
-2020,Jun,Dermatology,1094,1328
-2020,Jun,Endocrinology,116,522
-2020,Jun,ENT,6656,3
-2020,Jun,Gastroenterology,2830,4114
-2020,Jun,General Medicine,1145,2252
-2020,Jun,General Surgery,8584,735
+2020,Jun,Dermatology,11363,20678
+2020,Jun,Endocrinology,116,660
+2020,Jun,ENT,25763,44010
+2020,Jun,Gastroenterology,6905,14796
+2020,Jun,General Medicine,6389,12683
+2020,Jun,General Surgery,17931,42918
 2020,Jun,Genito-Urinary Medicine,0,0
 2020,Jun,Geriatric Medicine,310,1152
-2020,Jun,GP Other,3,0
-2020,Jun,Gynaecology,2887,1484
-2020,Jun,Haematology (Clinical),311,875
+2020,Jun,GP Other,3,656
+2020,Jun,Gynaecology,8658,20791
+2020,Jun,Haematology (Clinical),311,888
 2020,Jun,Infectious Diseases,59,149
-2020,Jun,Joint Consultant Clinics,1,1
+2020,Jun,Joint Consultant Clinics,1,12
 2020,Jun,Learning Disability,21,59
 2020,Jun,Medical Oncology,1,3
-2020,Jun,Nephrology,9,198
-2020,Jun,Neurology,89,2805
-2020,Jun,Neurosurgery,170,413
+2020,Jun,Nephrology,9,256
+2020,Jun,Neurology,13210,17970
+2020,Jun,Neurosurgery,170,681
 2020,Jun,Old Age Psychiatry,42,493
-2020,Jun,Ophthalmology,4873,2160
-2020,Jun,Oral Surgery,245,263
+2020,Jun,Ophthalmology,19017,35933
+2020,Jun,Oral Surgery,7871,11753
 2020,Jun,Orthodontics,57,606
-2020,Jun,Paediatric Dentistry,99,412
-2020,Jun,Paediatric Neurology,4,115
-2020,Jun,Paediatric Surgery,282,328
-2020,Jun,Paediatrics,607,2970
-2020,Jun,Pain Management,719,2921
+2020,Jun,Paediatric Dentistry,99,575
+2020,Jun,Paediatric Neurology,4,132
+2020,Jun,Paediatric Surgery,282,1029
+2020,Jun,Paediatrics,4212,11259
+2020,Jun,Pain Management,4470,8479
 2020,Jun,Palliative Medicine,0,2
-2020,Jun,Plastic Surgery,1435,39
-2020,Jun,Radiology,27,25
+2020,Jun,Plastic Surgery,3302,5607
+2020,Jun,Radiology,27,77
 2020,Jun,Rehabilitation,20,38
-2020,Jun,Restorative Dentistry,217,995
-2020,Jun,Rheumatology,1740,5154
-2020,Jun,T & O Surgery,15734,9692
-2020,Jun,Thoracic Medicine,773,2326
-2020,Jun,Thoracic Surgery,198,10
-2020,Jun,Urology,4648,3018
-2020,Mar,Anaesthetics,1,0
-2020,Mar,Cardiac Surgery,0,0
-2020,Mar,Cardiology,1280,2585
+2020,Jun,Restorative Dentistry,217,1125
+2020,Jun,Rheumatology,9536,13145
+2020,Jun,T & O Surgery,21157,36694
+2020,Jun,Thoracic Medicine,3941,7831
+2020,Jun,Thoracic Surgery,198,292
+2020,Jun,Urology,8044,14086
+2020,Mar,Anaesthetics,1,1
+2020,Mar,Cardiac Surgery,0,70
+2020,Mar,Cardiology,1280,6012
 2020,Mar,Chemical Pathology,1,49
 2020,Mar,Clinical Genetics,146,789
 2020,Mar,Clinical Oncology,0,0
 2020,Mar,Dental Medicine Specialties,1,409
-2020,Mar,Dermatology,424,655
-2020,Mar,Endocrinology,113,250
-2020,Mar,ENT,6690,1403
-2020,Mar,Gastroenterology,2220,3692
-2020,Mar,General Medicine,590,1926
-2020,Mar,General Surgery,6121,233
+2020,Mar,Dermatology,9472,17361
+2020,Mar,Endocrinology,113,375
+2020,Mar,ENT,21325,36778
+2020,Mar,Gastroenterology,6070,12223
+2020,Mar,General Medicine,5289,9966
+2020,Mar,General Surgery,13005,32211
 2020,Mar,Genito-Urinary Medicine,0,0
 2020,Mar,Geriatric Medicine,203,629
-2020,Mar,GP Other,1,0
-2020,Mar,Gynaecology,1793,1065
-2020,Mar,Haematology (Clinical),283,674
+2020,Mar,GP Other,1,182
+2020,Mar,Gynaecology,6704,15074
+2020,Mar,Haematology (Clinical),283,676
 2020,Mar,Infectious Diseases,32,114
-2020,Mar,Joint Consultant Clinics,1,0
+2020,Mar,Joint Consultant Clinics,1,6
 2020,Mar,Learning Disability,14,48
 2020,Mar,Medical Oncology,1,3
-2020,Mar,Nephrology,3,69
-2020,Mar,Neurology,70,2747
-2020,Mar,Neurosurgery,163,324
+2020,Mar,Nephrology,3,106
+2020,Mar,Neurology,12295,16385
+2020,Mar,Neurosurgery,163,546
 2020,Mar,Obstetrics,0,0
 2020,Mar,Old Age Psychiatry,8,341
-2020,Mar,Ophthalmology,3615,2753
-2020,Mar,Oral Surgery,185,70
+2020,Mar,Ophthalmology,16507,31448
+2020,Mar,Oral Surgery,7896,11794
 2020,Mar,Orthodontics,0,338
-2020,Mar,Paediatric Dentistry,23,260
-2020,Mar,Paediatric Neurology,2,73
-2020,Mar,Paediatric Surgery,207,144
-2020,Mar,Paediatrics,559,2562
-2020,Mar,Pain Management,1348,3505
+2020,Mar,Paediatric Dentistry,23,363
+2020,Mar,Paediatric Neurology,2,96
+2020,Mar,Paediatric Surgery,207,693
+2020,Mar,Paediatrics,3649,8419
+2020,Mar,Pain Management,3511,7043
 2020,Mar,Palliative Medicine,0,0
-2020,Mar,Plastic Surgery,1201,2
-2020,Mar,Radiology,21,13
+2020,Mar,Plastic Surgery,2804,4702
+2020,Mar,Radiology,21,40
 2020,Mar,Rehabilitation,19,36
-2020,Mar,Restorative Dentistry,10,653
-2020,Mar,Rheumatology,1495,4476
-2020,Mar,T & O Surgery,8107,3
-2020,Mar,Thoracic Medicine,1351,3019
-2020,Mar,Thoracic Surgery,169,1
-2020,Mar,Urology,4887,4301
-2020,Sep,Anaesthetics,1,0
-2020,Sep,Cardiac Surgery,0,1
-2020,Sep,Cardiology,1643,3021
+2020,Mar,Restorative Dentistry,10,750
+2020,Mar,Rheumatology,8732,11719
+2020,Mar,T & O Surgery,18122,31554
+2020,Mar,Thoracic Medicine,3110,5858
+2020,Mar,Thoracic Surgery,169,250
+2020,Mar,Urology,6948,11727
+2020,Sep,Anaesthetics,1,1
+2020,Sep,Cardiac Surgery,0,123
+2020,Sep,Cardiology,2763,8191
 2020,Sep,Chemical Pathology,2,79
 2020,Sep,Clinical Genetics,197,566
 2020,Sep,Clinical Oncology,0,0
 2020,Sep,Dental Medicine Specialties,175,805
-2020,Sep,Dermatology,708,850
-2020,Sep,Endocrinology,133,495
-2020,Sep,ENT,7764,133
-2020,Sep,Gastroenterology,2714,3928
-2020,Sep,General Medicine,1674,1837
-2020,Sep,General Surgery,9808,0
+2020,Sep,Dermatology,12797,20643
+2020,Sep,Endocrinology,133,638
+2020,Sep,ENT,30172,45702
+2020,Sep,Gastroenterology,8105,15156
+2020,Sep,General Medicine,7385,12425
+2020,Sep,General Surgery,22993,44070
 2020,Sep,Genito-Urinary Medicine,0,0
 2020,Sep,Geriatric Medicine,412,941
-2020,Sep,GP Other,18,0
-2020,Sep,Gynaecology,4218,1499
-2020,Sep,Haematology (Clinical),322,895
+2020,Sep,GP Other,18,479
+2020,Sep,Gynaecology,10215,21275
+2020,Sep,Haematology (Clinical),322,899
 2020,Sep,Infectious Diseases,87,150
-2020,Sep,Joint Consultant Clinics,9,3
+2020,Sep,Joint Consultant Clinics,9,33
 2020,Sep,Learning Disability,26,74
 2020,Sep,Medical Oncology,2,3
-2020,Sep,Nephrology,9,141
-2020,Sep,Neurology,115,2382
-2020,Sep,Neurosurgery,231,496
+2020,Sep,Nephrology,9,211
+2020,Sep,Neurology,13243,17681
+2020,Sep,Neurosurgery,231,735
 2020,Sep,Old Age Psychiatry,105,509
-2020,Sep,Ophthalmology,5095,1668
-2020,Sep,Oral Surgery,248,1324
+2020,Sep,Ophthalmology,22003,34735
+2020,Sep,Oral Surgery,8850,12048
 2020,Sep,Orthodontics,168,685
-2020,Sep,Paediatric Dentistry,189,482
-2020,Sep,Paediatric Neurology,10,101
-2020,Sep,Paediatric Surgery,407,454
-2020,Sep,Paediatrics,716,3428
-2020,Sep,Pain Management,1055,2594
+2020,Sep,Paediatric Dentistry,189,618
+2020,Sep,Paediatric Neurology,10,115
+2020,Sep,Paediatric Surgery,407,1099
+2020,Sep,Paediatrics,4669,10836
+2020,Sep,Pain Management,5493,8666
 2020,Sep,Palliative Medicine,0,1
-2020,Sep,Plastic Surgery,1666,120
-2020,Sep,Radiology,35,34
+2020,Sep,Plastic Surgery,3817,5948
+2020,Sep,Radiology,35,90
 2020,Sep,Rehabilitation,18,31
-2020,Sep,Restorative Dentistry,514,1241
-2020,Sep,Rheumatology,892,4114
-2020,Sep,T & O Surgery,11705,3
-2020,Sep,Thoracic Medicine,868,2929
-2020,Sep,Thoracic Surgery,213,28
-2020,Sep,Urology,4349,2115
-2021,Mar,Cardiac Surgery,28,1
-2021,Mar,Cardiology,2404,3358
+2020,Sep,Restorative Dentistry,514,1369
+2020,Sep,Rheumatology,10055,13510
+2020,Sep,T & O Surgery,24131,37648
+2020,Sep,Thoracic Medicine,4512,7759
+2020,Sep,Thoracic Surgery,213,293
+2020,Sep,Urology,9225,14625
+2021,Mar,Cardiac Surgery,28,195
+2021,Mar,Cardiology,4127,7547
 2021,Mar,Chemical Pathology,5,31
 2021,Mar,Clinical Genetics,0,134
 2021,Mar,Clinical Oncology,0,1
 2021,Mar,Dental Medicine Specialties,530,712
-2021,Mar,Dermatology,697,1109
-2021,Mar,Endocrinology,332,738
-2021,Mar,ENT,10281,1943
-2021,Mar,Gastroenterology,3678,1915
-2021,Mar,General Medicine,3291,2713
-2021,Mar,General Surgery,15477,0
+2021,Mar,Dermatology,16432,21883
+2021,Mar,Endocrinology,332,882
+2021,Mar,ENT,40667,48544
+2021,Mar,Gastroenterology,11355,16821
+2021,Mar,General Medicine,9298,13518
+2021,Mar,General Surgery,36343,51019
 2021,Mar,Genito-Urinary Medicine,0,0
 2021,Mar,Geriatric Medicine,552,873
-2021,Mar,GP Other,347,0
-2021,Mar,Gynaecology,4534,279
-2021,Mar,Haematology (Clinical),550,857
+2021,Mar,GP Other,347,740
+2021,Mar,Gynaecology,13715,23129
+2021,Mar,Haematology (Clinical),550,859
 2021,Mar,Infectious Diseases,123,154
 2021,Mar,Joint Consultant Clinics,0,0
 2021,Mar,Learning Disability,30,55
 2021,Mar,Medical Oncology,2,4
-2021,Mar,Nephrology,34,105
-2021,Mar,Neurology,154,1480
-2021,Mar,Neurosurgery,389,450
+2021,Mar,Nephrology,34,214
+2021,Mar,Neurology,15537,18548
+2021,Mar,Neurosurgery,389,741
 2021,Mar,Old Age Psychiatry,347,775
-2021,Mar,Ophthalmology,5898,1152
-2021,Mar,Oral Surgery,519,1460
+2021,Mar,Ophthalmology,25912,34640
+2021,Mar,Oral Surgery,10081,11798
 2021,Mar,Orthodontics,448,668
-2021,Mar,Paediatric Dentistry,360,386
-2021,Mar,Paediatric Neurology,42,141
-2021,Mar,Paediatric Surgery,652,585
-2021,Mar,Paediatrics,959,2166
-2021,Mar,Pain Management,1820,1897
+2021,Mar,Paediatric Dentistry,360,475
+2021,Mar,Paediatric Neurology,42,155
+2021,Mar,Paediatric Surgery,652,1290
+2021,Mar,Paediatrics,6548,10018
+2021,Mar,Pain Management,6918,8752
 2021,Mar,Palliative Medicine,0,1
-2021,Mar,Plastic Surgery,2293,877
-2021,Mar,Radiology,42,26
+2021,Mar,Plastic Surgery,5319,6446
+2021,Mar,Radiology,42,68
 2021,Mar,Rehabilitation,21,32
-2021,Mar,Restorative Dentistry,116,255
-2021,Mar,Rheumatology,110,2676
-2021,Mar,T & O Surgery,15642,911
-2021,Mar,Thoracic Medicine,1661,3874
-2021,Mar,Thoracic Surgery,255,14
-2021,Mar,Urology,5398,1658
+2021,Mar,Restorative Dentistry,1288,1543
+2021,Mar,Rheumatology,11723,14575
+2021,Mar,T & O Surgery,29637,39553
+2021,Mar,Thoracic Medicine,6450,8700
+2021,Mar,Thoracic Surgery,255,317
+2021,Mar,Urology,11382,15257
 2021,Mar,NA,0,0
