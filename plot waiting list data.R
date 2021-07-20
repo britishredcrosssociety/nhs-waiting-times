@@ -10,7 +10,7 @@ ni_waits <- read_csv("data/waiting lists for NI.csv")
 # ---- Plot regional waiting times ----
 # Total numbers of people waiting more than a year in each region
 region_waits %>% 
-  filter(Year == 2021 & Month == "Apr" & `Treatment Function Name` == "Total") %>% 
+  filter(Year == 2021 & Month == "May" & `Treatment Function Name` == "Total") %>% 
   
   # Manually include stats from devolved nations
   add_row(
@@ -36,9 +36,10 @@ region_waits %>%
   ggplot(aes(x = reorder(NHSER20NM, `Total waiting > 52 weeks`, sum), y = `Total waiting > 52 weeks`)) +
   geom_col() +
   geom_text(aes(label = scales::comma(`Total waiting > 52 weeks`)), hjust = 1.3, colour = "white") +
+  annotate("text", x = 10, y = 100000, label = "Data not available for Scotland") +
   coord_flip() +
   scale_y_continuous(labels = scales::comma, position = "right") +
-  labs(caption = "Source: I&I analysis of NHSE data",
+  labs(caption = "Source: I&I analysis of NHSE, NHSW, NHS Scotland and NHS NI data",
        x = NULL, y = "Number of people waiting more than a year") +
   theme_classic() +
   theme(
@@ -51,7 +52,7 @@ ggsave("charts/NHS waiting list by region - more than a year.png", height = 100,
 
 # Number of people waiting > 18 weeks
 region_waits %>% 
-  filter(Year == 2021 & Month == "Apr" & `Treatment Function Name` == "Total") %>% 
+  filter(Year == 2021 & Month == "May" & `Treatment Function Name` == "Total") %>% 
   
   # Manually include stats from devolved nations
   add_row(
@@ -81,7 +82,7 @@ region_waits %>%
   geom_bar_text(aes(label = scales::comma(`Total waiting > 18 weeks`))) +
   coord_flip() +
   scale_y_continuous(labels = scales::comma, position = "right") +
-  labs(caption = "Source: I&I analysis of NHSE data",
+  labs(caption = "Source: I&I analysis of NHSE, NHSW, NHS Scotland and NHS NI data",
        x = NULL, y = "Number of people waiting more than 18 weeks") +
   theme_classic() +
   theme(
@@ -143,6 +144,7 @@ uk_waits %>%
   facet_wrap(~Region, nrow = 2) +
   scale_x_discrete(labels = c("J","F","M","A","M","J","J","A","S","O","N","D")) +
   scale_y_continuous(labels = scales::comma) +
+  scale_colour_manual(values = rev(c("#a50f15", "#ef3b2c", "#fc9272"))) +
   labs(caption = "Source: I&I analysis of NHSE, NHSW, NHS Scotland and NHS NI data",
        x = NULL, y = "Number of people waiting more than a year", colour = NULL) +
   theme_classic() +

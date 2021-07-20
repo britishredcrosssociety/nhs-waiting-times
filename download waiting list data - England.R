@@ -1,6 +1,6 @@
 library(tidyverse)
 library(lubridate)
-library(arrow)
+# library(arrow)
 library(httr)
 
 # ---- Lookup table for matching old/new NHS Regions ----
@@ -40,6 +40,7 @@ nhs_region_lookup <- tribble(
 # ---- Download waiting list data ----
 # URLs for full waiting list data by month from https://www.england.nhs.uk/statistics/statistical-work-areas/rtt-waiting-times
 urls <- c(
+  may_21 = "https://www.england.nhs.uk/statistics/wp-content/uploads/sites/2/2021/07/Full-CSV-data-file-May21-ZIP-3163K-69343.zip",
   apr_21 = "https://www.england.nhs.uk/statistics/wp-content/uploads/sites/2/2021/06/Full-CSV-data-file-Apr21-ZIP-3110K-54792.zip",
   mar_21 = "https://www.england.nhs.uk/statistics/wp-content/uploads/sites/2/2021/05/Full-CSV-data-file-Mar21-ZIP-2888K-76325.zip",
   feb_21 = "https://www.england.nhs.uk/statistics/wp-content/uploads/sites/2/2021/04/Full-CSV-data-file-Feb21-ZIP-2739K-25692.zip",
@@ -89,6 +90,7 @@ stp_region <- read_csv("https://opendata.arcgis.com/datasets/00613813dd4b4f2dba1
 # ---- Load waiting list data into separate dataframes ----
 # Set up empty dataframes
 stp_waits <- tibble()
+stp_flow <- tibble()
 region_waits <- tibble()
 
 # Debugging:
@@ -118,8 +120,25 @@ for (file in list.files(td, pattern = "*.csv", full.names = TRUE)) {
       summarise(`Total waiting > 52 weeks` = sum(`Total waiting > 52 weeks`, na.rm = TRUE),
                 `Total waiting > 18 weeks` = sum(`Total waiting > 18 weeks`, na.rm = TRUE))
     
+    d_flow <- 
+      d %>% 
+      filter(`Treatment Function Name` == "Total") %>% 
+      select(Year, Month, `Provider Parent Org Code`, `RTT Part Description`, `Total All`) %>% 
+      mutate(Pathway = case_when(
+        str_detect(`RTT Part Description`, "^Completed") ~ "Completed",
+        str_detect(`RTT Part Description`, "^Incomplete") ~ "Incomplete",
+        str_detect(`RTT Part Description`, "^New") ~ "New"
+      )) %>% 
+      
+      group_by(Year, Month, `Provider Parent Org Code`, Pathway) %>% 
+      summarise(`Total All` = sum(`Total All`, na.rm = TRUE)) %>% 
+      ungroup() %>% 
+      
+      pivot_wider(names_from = Pathway, values_from = `Total All`)
+    
     # Bind to main STP dataframe
     stp_waits <- bind_rows(stp_waits, d_stp)
+    stp_flow <- bind_rows(stp_flow, d_flow)
     
     # Current data contains STPs/ICSs, so merge in NHS Regions
     d <- 
@@ -136,8 +155,25 @@ for (file in list.files(td, pattern = "*.csv", full.names = TRUE)) {
       summarise(`Total waiting > 52 weeks` = sum(`Gt 52 Weeks SUM 1`, na.rm = TRUE),
                 `Total waiting > 18 weeks` = sum(`Total waiting > 18 weeks`, na.rm = TRUE))
     
+    d_flow <- 
+      d %>% 
+      filter(`Treatment Function Name` == "Total") %>% 
+      select(Year, Month, `Provider Parent Org Code`, `RTT Part Description`, `Total All`) %>% 
+      mutate(Pathway = case_when(
+        str_detect(`RTT Part Description`, "^Completed") ~ "Completed",
+        str_detect(`RTT Part Description`, "^Incomplete") ~ "Incomplete",
+        str_detect(`RTT Part Description`, "^New") ~ "New"
+      )) %>% 
+      
+      group_by(Year, Month, `Provider Parent Org Code`, Pathway) %>% 
+      summarise(`Total All` = sum(`Total All`, na.rm = TRUE)) %>% 
+      ungroup() %>% 
+      
+      pivot_wider(names_from = Pathway, values_from = `Total All`)
+    
     # Bind to main STP dataframe
     stp_waits <- bind_rows(stp_waits, d_stp)
+    stp_flow <- bind_rows(stp_flow, d_flow)
     
     # Current data contains STPs/ICSs, so merge in NHS Regions
     d <- 
@@ -192,12 +228,17 @@ stp_waits <-
   stp_waits %>% 
   mutate(Month = factor(Month, levels = month.abb))
 
+stp_flow <- 
+  stp_flow %>% 
+  mutate(Month = factor(Month, levels = month.abb))
+
 region_waits <- 
   region_waits %>% 
   mutate(Month = factor(Month, levels = month.abb))
 
 # Save
 write_csv(stp_waits, "data/waiting lists for STPs.csv")
+write_csv(stp_flow, "data/waiting list flow for STPs.csv")
 write_csv(region_waits, "data/waiting lists for NHS Regions.csv")
 
 # ---- Load all waiting list data into a single dataframe ----
