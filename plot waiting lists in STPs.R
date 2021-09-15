@@ -101,11 +101,13 @@ plt_harrogate$plt +
 
 ggsave("charts/West Yorkshire and Harrogate waiting times - more than a year - proportion.png", height = 150, width = 350, units = "mm")
 
-# Plot without highlighting any particular bar
-ics <- plot_waits_latest_month(year = 2021, month = "Apr", population_percentage = TRUE)
-ics$plt + labs(title = "Percentage of people waiting over a year for treatment")
+# Plot all ICS/STPs
+# - Proportions of population -
+ics_prop <- plot_waits_latest_month(year = 2021, month = "Jul", population_percentage = TRUE)
+ics_prop$plt + labs(title = "Percentage of people waiting more than a year for treatment")
 ggsave("charts/ICS waiting times - more than a year - proportion.png", height = 150, width = 350, units = "mm")
 
-ics <- plot_waits_latest_month(year = 2021, month = "Apr", population_percentage = FALSE)
-ics$plt + labs(title = "Number of people waiting over a year for treatment")
+# - Absolute numbers -
+ics_num <- plot_waits_latest_month(year = 2021, month = "Jul", population_percentage = FALSE)
+ics_num$plt + labs(title = "Number of people waiting more than a year for treatment")
 ggsave("charts/ICS waiting times - more than a year - number.png", height = 150, width = 250, units = "mm")
