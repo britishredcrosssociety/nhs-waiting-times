@@ -183,7 +183,7 @@ uk_waits <-
   bind_rows(
     region_waits %>% filter(`Treatment Function Name` == "Total") %>% select(Year, Month, Region = NHSER20NM, `Total waiting > 18 weeks`),
     wales_waits %>% mutate(Region = "Wales") %>% select(Year, Month, Region, `Total waiting > 18 weeks`),
-    sco_waits %>% mutate(Region = "Scotland") %>% select(Year, Month, Region, `Total waiting > 18 weeks` = `Total waiting > 18 weeks`),
+    sco_waits %>% filter(Year >= 2019) %>% mutate(Region = "Scotland") %>% select(Year, Month, Region, `Total waiting > 18 weeks` = `Total waiting > 18 weeks`),
     ni_waits_total %>% select(Year, Month, Region, `Total waiting > 18 weeks`)
   )
 
@@ -191,21 +191,21 @@ uk_waits %>%
   mutate(Year = factor(Year),
          Month = factor(Month, levels = month.abb)) %>% 
   
-  ggplot(aes(x = Month, y = `Total waiting > 52 weeks`)) +
+  ggplot(aes(x = Month, y = `Total waiting > 18 weeks`)) +
   geom_line(aes(colour = Year, group = Year)) +
   geom_point(aes(colour = Year)) +
   
-  geom_text(data = scotland_text, aes(label = label)) +
+  # geom_text(data = scotland_text, aes(label = label)) +
   
   facet_wrap(~Region, nrow = 2) +
   scale_x_discrete(labels = c("J","F","M","A","M","J","J","A","S","O","N","D")) +
   scale_y_continuous(labels = scales::comma) +
   scale_colour_manual(values = rev(c("#a50f15", "#ef3b2c", "#fc9272"))) +
   labs(
-    title = "Number of people waiting more than a year for treatment",
+    title = "Number of people waiting more than 18 weeks for treatment",
     caption = "Source: I&I analysis of NHSE, NHSW, NHS Scotland and NHS NI data",
     x = NULL,
-    y = "Number of people waiting more than a year", 
+    y = "Number of people waiting more than 18 weeks", 
     colour = NULL
   ) +
   theme_classic() +
@@ -215,7 +215,7 @@ uk_waits %>%
     legend.background = element_blank()
   )
 
-ggsave("charts/NHS waiting list over time by region - more than 52 weeks.png", height = 90, width = 205, units = "mm")
+ggsave("charts/NHS waiting list over time by region - more than 18 weeks.png", height = 90, width = 205, units = "mm")
 
 # ---- Types of treatment ----
 region_waits %>% 
