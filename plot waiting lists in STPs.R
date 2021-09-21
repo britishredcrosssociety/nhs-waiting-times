@@ -107,7 +107,14 @@ ics_prop <- plot_waits_latest_month(year = 2021, month = "Jul", population_perce
 ics_prop$plt + labs(title = "Percentage of people waiting more than a year for treatment")
 ggsave("charts/ICS waiting times - more than a year - proportion.png", height = 150, width = 350, units = "mm")
 
+ics_prop$data |> 
+  arrange(desc(`Total waiting > 52 weeks`)) |> 
+  select(STP20NM, `Total waiting > 52 weeks`, proportion_waiting)
+
 # - Absolute numbers -
 ics_num <- plot_waits_latest_month(year = 2021, month = "Jul", population_percentage = FALSE)
 ics_num$plt + labs(title = "Number of people waiting more than a year for treatment")
 ggsave("charts/ICS waiting times - more than a year - number.png", height = 150, width = 250, units = "mm")
+
+ics_prop$data |> 
+  arrange(desc(`Total waiting > 52 weeks`))
