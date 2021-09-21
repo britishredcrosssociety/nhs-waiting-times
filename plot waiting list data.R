@@ -115,7 +115,7 @@ region_waits %>%
 
 ggsave("charts/NHS waiting list over time - more than 52 weeks.png", height = 100, width = 120, units = "mm")
 
-# ---- Plot regional waiting list sizes over time in UK ----
+# ---- Plot regional waiting list sizes over time in UK: more than a year ----
 ni_waits_total <- 
   ni_waits %>%
   mutate(Region = "Northern Ireland") %>% 
@@ -142,6 +142,51 @@ scotland_text <-
     label = "No data available"
   )
  
+uk_waits %>% 
+  mutate(Year = factor(Year),
+         Month = factor(Month, levels = month.abb)) %>% 
+  
+  ggplot(aes(x = Month, y = `Total waiting > 52 weeks`)) +
+  geom_line(aes(colour = Year, group = Year)) +
+  geom_point(aes(colour = Year)) +
+  
+  geom_text(data = scotland_text, aes(label = label)) +
+  
+  facet_wrap(~Region, nrow = 2) +
+  scale_x_discrete(labels = c("J","F","M","A","M","J","J","A","S","O","N","D")) +
+  scale_y_continuous(labels = scales::comma) +
+  scale_colour_manual(values = rev(c("#a50f15", "#ef3b2c", "#fc9272"))) +
+  labs(
+    title = "Number of people waiting more than a year for treatment",
+    caption = "Source: I&I analysis of NHSE, NHSW, NHS Scotland and NHS NI data",
+    x = NULL,
+    y = "Number of people waiting more than a year", 
+    colour = NULL
+  ) +
+  theme_classic() +
+  theme(
+    legend.position = c(0.14, 0.95), 
+    legend.direction = "horizontal",
+    legend.background = element_blank()
+  )
+
+ggsave("charts/NHS waiting list over time by region - more than 52 weeks.png", height = 90, width = 205, units = "mm")
+
+# ---- Plot regional waiting list sizes over time in UK: more than 18 weeks ----
+ni_waits_total <- 
+  ni_waits %>%
+  mutate(Region = "Northern Ireland") %>% 
+  group_by(Year, Month, Region) %>% 
+  summarise(`Total waiting > 18 weeks` = sum(`Total waiting > 18 weeks`, na.rm = TRUE))
+
+uk_waits <- 
+  bind_rows(
+    region_waits %>% filter(`Treatment Function Name` == "Total") %>% select(Year, Month, Region = NHSER20NM, `Total waiting > 18 weeks`),
+    wales_waits %>% mutate(Region = "Wales") %>% select(Year, Month, Region, `Total waiting > 18 weeks`),
+    sco_waits %>% mutate(Region = "Scotland") %>% select(Year, Month, Region, `Total waiting > 18 weeks` = `Total waiting > 18 weeks`),
+    ni_waits_total %>% select(Year, Month, Region, `Total waiting > 18 weeks`)
+  )
+
 uk_waits %>% 
   mutate(Year = factor(Year),
          Month = factor(Month, levels = month.abb)) %>% 
