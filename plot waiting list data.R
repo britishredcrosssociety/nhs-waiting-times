@@ -10,13 +10,13 @@ ni_waits <- read_csv("data/waiting lists for NI.csv")
 # ---- Plot regional waiting times ----
 # Total numbers of people waiting more than a year in each region
 region_waits %>% 
-  filter(Year == 2021 & Month == "Jul" & `Treatment Function Name` == "Total") %>% 
+  filter(Year == 2021 & Month == "Dec" & `Treatment Function Name` == "Total") %>% 
   
   # Manually include stats from devolved nations
   add_row(
     NHSER20NM = "Wales", 
     `Total waiting > 52 weeks` = wales_waits %>%
-      filter(Year == 2021 & Month == "Jun") %>% 
+      filter(Year == 2021 & Month == "Dec") %>% 
       pull(`Total waiting > 52 weeks`)
   ) %>%
 
@@ -28,7 +28,7 @@ region_waits %>%
   add_row(
     NHSER20NM = "Northern Ireland", 
     `Total waiting > 52 weeks` = ni_waits %>% 
-      filter(Year == 2021 & Month == "Jun") %>% 
+      filter(Year == 2021 & Month == "Sep") %>% 
       summarise(Total = sum(`Total waiting > 52 weeks`, na.rm = TRUE)) %>% 
       pull(Total)
   ) %>%
@@ -52,27 +52,27 @@ ggsave("charts/NHS waiting list by region - more than a year.png", height = 100,
 
 # Number of people waiting > 18 weeks
 region_waits %>% 
-  filter(Year == 2021 & Month == "Jul" & `Treatment Function Name` == "Total") %>% 
+  filter(Year == 2021 & Month == "Dec" & `Treatment Function Name` == "Total") %>% 
   
   # Manually include stats from devolved nations
   add_row(
     NHSER20NM = "Wales", 
     `Total waiting > 18 weeks` = wales_waits %>%
-      filter(Year == 2021 & Month == "Jun") %>% 
+      filter(Year == 2021 & Month == "Dec") %>% 
       pull(`Total waiting > 18 weeks`)
   ) %>%
   
   add_row(
     NHSER20NM = "Scotland", 
     `Total waiting > 18 weeks` = sco_waits %>%
-      filter(Year == 2021 & Month == "Jun") %>% 
+      filter(Year == 2021 & Month == "Sep") %>% 
       pull(`Total waiting > 18 weeks`)
   ) %>%
   
   add_row(
     NHSER20NM = "Northern Ireland", 
     `Total waiting > 18 weeks` = ni_waits %>% 
-      filter(Year == 2021 & Month == "Jun") %>% 
+      filter(Year == 2021 & Month == "Sep") %>% 
       summarise(Total = sum(`Total waiting > 18 weeks`, na.rm = TRUE)) %>% 
       pull(Total)
   ) %>%
