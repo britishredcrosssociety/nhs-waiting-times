@@ -2,7 +2,7 @@ library(tidyverse)
 library(lubridate)
 
 # Inpatient & Day Case waiting times: https://www.health-ni.gov.uk/publications/northern-ireland-waiting-time-statistics-inpatient-and-day-case-waiting-times-september-2021
-ni_inpatient <- read_csv("https://www.health-ni.gov.uk/sites/default/files/publications/health/hs-niwts-tables-total-waiting-q2-21-22.csv",
+ni_inpatient <- read_csv("https://www.health-ni.gov.uk/sites/default/files/publications/health/hs-niwts-tables-total-waiting-q4-21-22.csv",
                          col_types = cols(
                              .default = col_double(),
                              `Quarter Ending` = col_character(),
@@ -12,7 +12,7 @@ ni_inpatient <- read_csv("https://www.health-ni.gov.uk/sites/default/files/publi
                            ))
 
 # Statistics by HSC Trust and Outpatients: https://www.health-ni.gov.uk/publications/northern-ireland-waiting-time-statistics-outpatient-waiting-times-september-2021
-ni_outpatient <- read_csv("https://www.health-ni.gov.uk/sites/default/files/publications/health/hs-niwts-tables-outpatients-q2-21-22.csv",
+ni_outpatient <- read_csv("https://www.health-ni.gov.uk/sites/default/files/publications/health/hs-niwts-tables-outpatients-q4-21-22.csv",
                           col_types = cols(
                             .default = col_character(),
                             `Quarter Ending` = col_character(),
@@ -38,8 +38,8 @@ ni_outpatient_sum <-
   
   group_by(Year, Month, Specialty) %>% 
   summarise(
-    `Total waiting > 52 weeks` = sum(`>52 weeks`, na.rm = TRUE),
-    `Total waiting > 18 weeks` = sum(`>18-52 weeks`, na.rm = TRUE) + sum(`>52 weeks`, na.rm = TRUE)
+    `Total waiting > 52 weeks` = sum(`>52-65 weeks`, na.rm = TRUE) + sum(`>65-78 weeks`, na.rm = TRUE) + sum(`>78-91 weeks`, na.rm = TRUE) + sum(`>91-104 weeks`) + sum(`>104 weeks`, na.rm = TRUE),
+    `Total waiting > 18 weeks` = sum(`>18 weeks`, na.rm = TRUE)
   )
 
 ni_inpatient_sum <- 
@@ -55,15 +55,13 @@ ni_inpatient_sum <-
   group_by(Year, Month, Specialty) %>% 
   summarise(
     `Total waiting > 52 weeks` = sum(`>52 weeks`, na.rm = TRUE),
-    `Total waiting > 13 weeks` = sum(`> 13 - 21 weeks`, na.rm = TRUE) + 
-      sum(`> 21 - 26 weeks`, na.rm = TRUE) + 
-      sum(`> 26 weeks`, na.rm = TRUE)
+    `Total waiting > 21 weeks` = sum(`> 21 - 26 weeks`, na.rm = TRUE) + sum(`> 26-30 weeks`, na.rm = TRUE) + sum(`> 30 weeks`, na.rm = TRUE)
   )
 
 ni_waits <- 
   bind_rows(
     ni_outpatient_sum,
-    ni_inpatient_sum %>% rename(`Total waiting > 18 weeks` = `Total waiting > 13 weeks`)
+    ni_inpatient_sum %>% rename(`Total waiting > 18 weeks` = `Total waiting > 21 weeks`)
   ) %>% 
   
   group_by(Year, Month, Specialty) %>% 

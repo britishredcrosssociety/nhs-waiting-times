@@ -12,8 +12,8 @@ library(ggfittext)
 #' @param highlight_stp String containing the name (or a word in the name) of an STP to highlight, otherwise NULL
 #' @param population_percentage If TRUE, show waiting list size as a proportion of the STP/ICSs population, otherwise show absolute waiting list size
 plot_waits_latest_month <- function(
-    year = 2021,
-    month = "Feb",
+    year = 2022,
+    month = "Apr",
     highlight_stp = NULL,
     population_percentage = TRUE
 ) {

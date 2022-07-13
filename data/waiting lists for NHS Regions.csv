@@ -2631,6 +2631,678 @@ Year,Month,NHSER20NM,Treatment Function Name,Total waiting > 52 weeks,Total wait
 2021,Dec,South West,Total,59105,319827
 2021,Dec,South West,Trauma and Orthopaedic Service,17793,61222
 2021,Dec,South West,Urology Service,3415,15445
+2022,Jan,East of England,Cardiology Service,767,14650
+2022,Jan,East of England,Cardiothoracic Surgery Service,57,801
+2022,Jan,East of England,Dermatology Service,2112,22511
+2022,Jan,East of England,Ear Nose and Throat Service,7670,34289
+2022,Jan,East of England,Elderly Medicine Service,6,437
+2022,Jan,East of England,Gastroenterology Service,1923,17579
+2022,Jan,East of England,General Internal Medicine Service,142,1623
+2022,Jan,East of England,General Surgery Service,7672,35331
+2022,Jan,East of England,Gynaecology Service,5653,28718
+2022,Jan,East of England,Neurology Service,118,5474
+2022,Jan,East of England,Neurosurgical Service,254,930
+2022,Jan,East of England,Ophthalmology Service,6943,43878
+2022,Jan,East of England,Oral Surgery Service,2794,15714
+2022,Jan,East of England,Other - Medical Services,1718,16767
+2022,Jan,East of England,Other - Mental Health Services,2,45
+2022,Jan,East of England,Other - Other Services,1759,9320
+2022,Jan,East of England,Other - Paediatric Services,1961,12334
+2022,Jan,East of England,Other - Surgical Services,1818,11422
+2022,Jan,East of England,Plastic Surgery Service,1816,9408
+2022,Jan,East of England,Respiratory Medicine Service,115,5736
+2022,Jan,East of England,Rheumatology Service,138,5382
+2022,Jan,East of England,Total,68429,379836
+2022,Jan,East of England,Trauma and Orthopaedic Service,17858,64392
+2022,Jan,East of England,Urology Service,5133,23095
+2022,Jan,London,Cardiology Service,1160,17552
+2022,Jan,London,Cardiothoracic Surgery Service,86,1244
+2022,Jan,London,Dermatology Service,872,19723
+2022,Jan,London,Ear Nose and Throat Service,5756,38737
+2022,Jan,London,Elderly Medicine Service,5,615
+2022,Jan,London,Gastroenterology Service,815,16571
+2022,Jan,London,General Internal Medicine Service,23,1766
+2022,Jan,London,General Surgery Service,4421,32556
+2022,Jan,London,Gynaecology Service,3376,32377
+2022,Jan,London,Neurology Service,162,11750
+2022,Jan,London,Neurosurgical Service,859,7617
+2022,Jan,London,Ophthalmology Service,1537,36255
+2022,Jan,London,Oral Surgery Service,871,18583
+2022,Jan,London,Other - Medical Services,3355,37746
+2022,Jan,London,Other - Mental Health Services,95,3346
+2022,Jan,London,Other - Other Services,771,7631
+2022,Jan,London,Other - Paediatric Services,3566,32768
+2022,Jan,London,Other - Surgical Services,4930,34725
+2022,Jan,London,Plastic Surgery Service,2021,8548
+2022,Jan,London,Respiratory Medicine Service,279,7303
+2022,Jan,London,Rheumatology Service,237,6761
+2022,Jan,London,Total,44997,451966
+2022,Jan,London,Trauma and Orthopaedic Service,6004,49704
+2022,Jan,London,Urology Service,3796,28088
+2022,Jan,Midlands,Cardiology Service,1349,22132
+2022,Jan,Midlands,Cardiothoracic Surgery Service,337,1677
+2022,Jan,Midlands,Dermatology Service,5237,31689
+2022,Jan,Midlands,Ear Nose and Throat Service,15231,61234
+2022,Jan,Midlands,Elderly Medicine Service,37,825
+2022,Jan,Midlands,Gastroenterology Service,4519,35556
+2022,Jan,Midlands,General Internal Medicine Service,210,3014
+2022,Jan,Midlands,General Surgery Service,17247,59905
+2022,Jan,Midlands,Gynaecology Service,9900,51064
+2022,Jan,Midlands,Neurology Service,2502,16848
+2022,Jan,Midlands,Neurosurgical Service,715,3615
+2022,Jan,Midlands,Ophthalmology Service,11826,67949
+2022,Jan,Midlands,Oral Surgery Service,7078,34498
+2022,Jan,Midlands,Other - Medical Services,2337,29946
+2022,Jan,Midlands,Other - Mental Health Services,0,49
+2022,Jan,Midlands,Other - Other Services,1037,6373
+2022,Jan,Midlands,Other - Paediatric Services,5080,27198
+2022,Jan,Midlands,Other - Surgical Services,8259,34407
+2022,Jan,Midlands,Plastic Surgery Service,2581,8639
+2022,Jan,Midlands,Respiratory Medicine Service,907,10858
+2022,Jan,Midlands,Rheumatology Service,606,10057
+2022,Jan,Midlands,Total,138644,677945
+2022,Jan,Midlands,Trauma and Orthopaedic Service,29446,117556
+2022,Jan,Midlands,Urology Service,12203,42856
+2022,Jan,North East and Yorkshire,Cardiology Service,431,10833
+2022,Jan,North East and Yorkshire,Cardiothoracic Surgery Service,136,797
+2022,Jan,North East and Yorkshire,Dermatology Service,1425,15848
+2022,Jan,North East and Yorkshire,Ear Nose and Throat Service,4728,33535
+2022,Jan,North East and Yorkshire,Elderly Medicine Service,18,671
+2022,Jan,North East and Yorkshire,Gastroenterology Service,855,11932
+2022,Jan,North East and Yorkshire,General Internal Medicine Service,95,3087
+2022,Jan,North East and Yorkshire,General Surgery Service,6877,37861
+2022,Jan,North East and Yorkshire,Gynaecology Service,3814,29238
+2022,Jan,North East and Yorkshire,Neurology Service,324,9147
+2022,Jan,North East and Yorkshire,Neurosurgical Service,860,3846
+2022,Jan,North East and Yorkshire,Ophthalmology Service,4055,35230
+2022,Jan,North East and Yorkshire,Oral Surgery Service,2313,20403
+2022,Jan,North East and Yorkshire,Other - Medical Services,804,17422
+2022,Jan,North East and Yorkshire,Other - Mental Health Services,2,238
+2022,Jan,North East and Yorkshire,Other - Other Services,795,9326
+2022,Jan,North East and Yorkshire,Other - Paediatric Services,2717,20266
+2022,Jan,North East and Yorkshire,Other - Surgical Services,4270,23878
+2022,Jan,North East and Yorkshire,Plastic Surgery Service,3263,14793
+2022,Jan,North East and Yorkshire,Respiratory Medicine Service,196,5720
+2022,Jan,North East and Yorkshire,Rheumatology Service,52,4735
+2022,Jan,North East and Yorkshire,Total,53889,398638
+2022,Jan,North East and Yorkshire,Trauma and Orthopaedic Service,11512,65547
+2022,Jan,North East and Yorkshire,Urology Service,4347,24285
+2022,Jan,North West,Cardiology Service,606,14423
+2022,Jan,North West,Cardiothoracic Surgery Service,228,1535
+2022,Jan,North West,Dermatology Service,943,17833
+2022,Jan,North West,Ear Nose and Throat Service,9799,44427
+2022,Jan,North West,Elderly Medicine Service,16,803
+2022,Jan,North West,Gastroenterology Service,3180,31745
+2022,Jan,North West,General Internal Medicine Service,529,2734
+2022,Jan,North West,General Surgery Service,11667,47370
+2022,Jan,North West,Gynaecology Service,8688,48520
+2022,Jan,North West,Neurology Service,876,12337
+2022,Jan,North West,Neurosurgical Service,1554,10365
+2022,Jan,North West,Ophthalmology Service,4351,39724
+2022,Jan,North West,Oral Surgery Service,9493,32163
+2022,Jan,North West,Other - Medical Services,1279,19676
+2022,Jan,North West,Other - Mental Health Services,8,77
+2022,Jan,North West,Other - Other Services,538,4110
+2022,Jan,North West,Other - Paediatric Services,3714,29993
+2022,Jan,North West,Other - Surgical Services,7875,34479
+2022,Jan,North West,Plastic Surgery Service,3637,14229
+2022,Jan,North West,Respiratory Medicine Service,103,5094
+2022,Jan,North West,Rheumatology Service,181,6120
+2022,Jan,North West,Total,91938,520078
+2022,Jan,North West,Trauma and Orthopaedic Service,15521,70199
+2022,Jan,North West,Urology Service,7152,32122
+2022,Jan,South East,Cardiology Service,135,10999
+2022,Jan,South East,Cardiothoracic Surgery Service,114,540
+2022,Jan,South East,Dermatology Service,396,15028
+2022,Jan,South East,Ear Nose and Throat Service,5776,37408
+2022,Jan,South East,Elderly Medicine Service,24,585
+2022,Jan,South East,Gastroenterology Service,2399,25200
+2022,Jan,South East,General Internal Medicine Service,12,627
+2022,Jan,South East,General Surgery Service,7155,38551
+2022,Jan,South East,Gynaecology Service,4980,34322
+2022,Jan,South East,Neurology Service,252,11131
+2022,Jan,South East,Neurosurgical Service,561,2085
+2022,Jan,South East,Ophthalmology Service,4468,46827
+2022,Jan,South East,Oral Surgery Service,2093,19029
+2022,Jan,South East,Other - Medical Services,1134,16773
+2022,Jan,South East,Other - Mental Health Services,22,263
+2022,Jan,South East,Other - Other Services,497,5839
+2022,Jan,South East,Other - Paediatric Services,953,11981
+2022,Jan,South East,Other - Surgical Services,3820,23370
+2022,Jan,South East,Plastic Surgery Service,1293,7572
+2022,Jan,South East,Respiratory Medicine Service,82,5468
+2022,Jan,South East,Rheumatology Service,56,4822
+2022,Jan,South East,Total,53508,419635
+2022,Jan,South East,Trauma and Orthopaedic Service,12617,74629
+2022,Jan,South East,Urology Service,4669,26586
+2022,Jan,South West,Cardiology Service,1466,14939
+2022,Jan,South West,Cardiothoracic Surgery Service,196,895
+2022,Jan,South West,Dermatology Service,611,12987
+2022,Jan,South West,Ear Nose and Throat Service,4891,24473
+2022,Jan,South West,Elderly Medicine Service,6,375
+2022,Jan,South West,Gastroenterology Service,1745,15074
+2022,Jan,South West,General Internal Medicine Service,196,1562
+2022,Jan,South West,General Surgery Service,3172,14106
+2022,Jan,South West,Gynaecology Service,3466,21586
+2022,Jan,South West,Neurology Service,389,7536
+2022,Jan,South West,Neurosurgical Service,1092,2907
+2022,Jan,South West,Ophthalmology Service,5730,42356
+2022,Jan,South West,Oral Surgery Service,3855,22984
+2022,Jan,South West,Other - Medical Services,990,13140
+2022,Jan,South West,Other - Mental Health Services,0,5
+2022,Jan,South West,Other - Other Services,429,6274
+2022,Jan,South West,Other - Paediatric Services,1794,10917
+2022,Jan,South West,Other - Surgical Services,7280,29776
+2022,Jan,South West,Plastic Surgery Service,1025,4600
+2022,Jan,South West,Respiratory Medicine Service,371,3858
+2022,Jan,South West,Rheumatology Service,357,3053
+2022,Jan,South West,Total,61029,335233
+2022,Jan,South West,Trauma and Orthopaedic Service,18309,65624
+2022,Jan,South West,Urology Service,3659,16206
+2022,Feb,East of England,Cardiology Service,784,15401
+2022,Feb,East of England,Cardiothoracic Surgery Service,72,886
+2022,Feb,East of England,Dermatology Service,2087,23733
+2022,Feb,East of England,Ear Nose and Throat Service,6326,34625
+2022,Feb,East of England,Elderly Medicine Service,8,498
+2022,Feb,East of England,Gastroenterology Service,1670,17499
+2022,Feb,East of England,General Internal Medicine Service,151,1612
+2022,Feb,East of England,General Surgery Service,7191,35851
+2022,Feb,East of England,Gynaecology Service,5626,29828
+2022,Feb,East of England,Neurology Service,118,5685
+2022,Feb,East of England,Neurosurgical Service,248,951
+2022,Feb,East of England,Ophthalmology Service,5460,44186
+2022,Feb,East of England,Oral Surgery Service,2688,16181
+2022,Feb,East of England,Other - Medical Services,1774,17480
+2022,Feb,East of England,Other - Mental Health Services,1,59
+2022,Feb,East of England,Other - Other Services,1822,9821
+2022,Feb,East of England,Other - Paediatric Services,1945,13000
+2022,Feb,East of England,Other - Surgical Services,1668,11419
+2022,Feb,East of England,Plastic Surgery Service,1659,9721
+2022,Feb,East of England,Respiratory Medicine Service,140,6325
+2022,Feb,East of England,Rheumatology Service,172,5644
+2022,Feb,East of England,Total,63018,390864
+2022,Feb,East of England,Trauma and Orthopaedic Service,16609,66344
+2022,Feb,East of England,Urology Service,4799,24115
+2022,Feb,London,Cardiology Service,1230,18337
+2022,Feb,London,Cardiothoracic Surgery Service,97,1380
+2022,Feb,London,Dermatology Service,944,21010
+2022,Feb,London,Ear Nose and Throat Service,5396,39280
+2022,Feb,London,Elderly Medicine Service,1,673
+2022,Feb,London,Gastroenterology Service,650,16560
+2022,Feb,London,General Internal Medicine Service,32,1851
+2022,Feb,London,General Surgery Service,4107,33351
+2022,Feb,London,Gynaecology Service,3270,34189
+2022,Feb,London,Neurology Service,172,12231
+2022,Feb,London,Neurosurgical Service,914,8127
+2022,Feb,London,Ophthalmology Service,1531,37908
+2022,Feb,London,Oral Surgery Service,791,20009
+2022,Feb,London,Other - Medical Services,3543,39233
+2022,Feb,London,Other - Mental Health Services,87,3579
+2022,Feb,London,Other - Other Services,685,8204
+2022,Feb,London,Other - Paediatric Services,3180,33432
+2022,Feb,London,Other - Surgical Services,4596,35976
+2022,Feb,London,Plastic Surgery Service,1793,8627
+2022,Feb,London,Respiratory Medicine Service,264,7957
+2022,Feb,London,Rheumatology Service,291,6880
+2022,Feb,London,Total,42724,468467
+2022,Feb,London,Trauma and Orthopaedic Service,5697,51821
+2022,Feb,London,Urology Service,3453,27852
+2022,Feb,Midlands,Cardiology Service,1356,21663
+2022,Feb,Midlands,Cardiothoracic Surgery Service,342,1754
+2022,Feb,Midlands,Dermatology Service,5122,32165
+2022,Feb,Midlands,Ear Nose and Throat Service,14642,62430
+2022,Feb,Midlands,Elderly Medicine Service,24,854
+2022,Feb,Midlands,Gastroenterology Service,4062,33246
+2022,Feb,Midlands,General Internal Medicine Service,163,2741
+2022,Feb,Midlands,General Surgery Service,16349,59298
+2022,Feb,Midlands,Gynaecology Service,9832,51754
+2022,Feb,Midlands,Neurology Service,2567,17139
+2022,Feb,Midlands,Neurosurgical Service,691,3562
+2022,Feb,Midlands,Ophthalmology Service,11428,68772
+2022,Feb,Midlands,Oral Surgery Service,6787,33904
+2022,Feb,Midlands,Other - Medical Services,2282,30054
+2022,Feb,Midlands,Other - Mental Health Services,0,60
+2022,Feb,Midlands,Other - Other Services,1012,6458
+2022,Feb,Midlands,Other - Paediatric Services,4830,28681
+2022,Feb,Midlands,Other - Surgical Services,8079,33362
+2022,Feb,Midlands,Plastic Surgery Service,2465,8473
+2022,Feb,Midlands,Respiratory Medicine Service,922,11024
+2022,Feb,Midlands,Rheumatology Service,659,10407
+2022,Feb,Midlands,Total,133360,680015
+2022,Feb,Midlands,Trauma and Orthopaedic Service,28096,119416
+2022,Feb,Midlands,Urology Service,11650,42798
+2022,Feb,North East and Yorkshire,Cardiology Service,492,10856
+2022,Feb,North East and Yorkshire,Cardiothoracic Surgery Service,138,853
+2022,Feb,North East and Yorkshire,Dermatology Service,1360,16599
+2022,Feb,North East and Yorkshire,Ear Nose and Throat Service,4662,34153
+2022,Feb,North East and Yorkshire,Elderly Medicine Service,18,707
+2022,Feb,North East and Yorkshire,Gastroenterology Service,875,11565
+2022,Feb,North East and Yorkshire,General Internal Medicine Service,97,2944
+2022,Feb,North East and Yorkshire,General Surgery Service,6879,37837
+2022,Feb,North East and Yorkshire,Gynaecology Service,3973,30250
+2022,Feb,North East and Yorkshire,Neurology Service,398,9476
+2022,Feb,North East and Yorkshire,Neurosurgical Service,872,4048
+2022,Feb,North East and Yorkshire,Ophthalmology Service,3619,35815
+2022,Feb,North East and Yorkshire,Oral Surgery Service,2481,21251
+2022,Feb,North East and Yorkshire,Other - Medical Services,758,18036
+2022,Feb,North East and Yorkshire,Other - Mental Health Services,4,298
+2022,Feb,North East and Yorkshire,Other - Other Services,797,9052
+2022,Feb,North East and Yorkshire,Other - Paediatric Services,2660,20797
+2022,Feb,North East and Yorkshire,Other - Surgical Services,4330,24118
+2022,Feb,North East and Yorkshire,Plastic Surgery Service,3079,14527
+2022,Feb,North East and Yorkshire,Respiratory Medicine Service,154,5912
+2022,Feb,North East and Yorkshire,Rheumatology Service,71,4720
+2022,Feb,North East and Yorkshire,Total,53249,405683
+2022,Feb,North East and Yorkshire,Trauma and Orthopaedic Service,11246,66864
+2022,Feb,North East and Yorkshire,Urology Service,4286,25005
+2022,Feb,North West,Cardiology Service,717,15541
+2022,Feb,North West,Cardiothoracic Surgery Service,229,1459
+2022,Feb,North West,Dermatology Service,1380,19438
+2022,Feb,North West,Ear Nose and Throat Service,10236,45954
+2022,Feb,North West,Elderly Medicine Service,12,971
+2022,Feb,North West,Gastroenterology Service,3409,31801
+2022,Feb,North West,General Internal Medicine Service,501,2822
+2022,Feb,North West,General Surgery Service,11486,47591
+2022,Feb,North West,Gynaecology Service,9086,50337
+2022,Feb,North West,Neurology Service,857,12902
+2022,Feb,North West,Neurosurgical Service,1579,10391
+2022,Feb,North West,Ophthalmology Service,4280,40978
+2022,Feb,North West,Oral Surgery Service,9016,32101
+2022,Feb,North West,Other - Medical Services,1182,19894
+2022,Feb,North West,Other - Mental Health Services,8,93
+2022,Feb,North West,Other - Other Services,518,4335
+2022,Feb,North West,Other - Paediatric Services,3641,31078
+2022,Feb,North West,Other - Surgical Services,7711,35123
+2022,Feb,North West,Plastic Surgery Service,3687,14710
+2022,Feb,North West,Respiratory Medicine Service,136,5715
+2022,Feb,North West,Rheumatology Service,183,6321
+2022,Feb,North West,Total,92238,534992
+2022,Feb,North West,Trauma and Orthopaedic Service,15104,72427
+2022,Feb,North West,Urology Service,7280,33010
+2022,Feb,South East,Cardiology Service,156,11435
+2022,Feb,South East,Cardiothoracic Surgery Service,103,538
+2022,Feb,South East,Dermatology Service,343,14758
+2022,Feb,South East,Ear Nose and Throat Service,5238,37006
+2022,Feb,South East,Elderly Medicine Service,25,659
+2022,Feb,South East,Gastroenterology Service,2785,26386
+2022,Feb,South East,General Internal Medicine Service,17,798
+2022,Feb,South East,General Surgery Service,7409,40290
+2022,Feb,South East,Gynaecology Service,5004,36150
+2022,Feb,South East,Neurology Service,279,11358
+2022,Feb,South East,Neurosurgical Service,561,2010
+2022,Feb,South East,Ophthalmology Service,3823,46251
+2022,Feb,South East,Oral Surgery Service,1925,19758
+2022,Feb,South East,Other - Medical Services,1173,17297
+2022,Feb,South East,Other - Mental Health Services,9,288
+2022,Feb,South East,Other - Other Services,1106,6570
+2022,Feb,South East,Other - Paediatric Services,945,12561
+2022,Feb,South East,Other - Surgical Services,4143,24193
+2022,Feb,South East,Plastic Surgery Service,1244,7560
+2022,Feb,South East,Respiratory Medicine Service,86,5799
+2022,Feb,South East,Rheumatology Service,52,4838
+2022,Feb,South East,Total,52370,429265
+2022,Feb,South East,Trauma and Orthopaedic Service,11517,75669
+2022,Feb,South East,Urology Service,4427,27093
+2022,Feb,South West,Cardiology Service,1418,14888
+2022,Feb,South West,Cardiothoracic Surgery Service,185,888
+2022,Feb,South West,Dermatology Service,688,13225
+2022,Feb,South West,Ear Nose and Throat Service,4721,24922
+2022,Feb,South West,Elderly Medicine Service,4,427
+2022,Feb,South West,Gastroenterology Service,1815,16918
+2022,Feb,South West,General Internal Medicine Service,206,1549
+2022,Feb,South West,General Surgery Service,3281,15007
+2022,Feb,South West,Gynaecology Service,3484,21790
+2022,Feb,South West,Neurology Service,482,7942
+2022,Feb,South West,Neurosurgical Service,1142,3017
+2022,Feb,South West,Ophthalmology Service,5045,42951
+2022,Feb,South West,Oral Surgery Service,3993,23509
+2022,Feb,South West,Other - Medical Services,1046,13386
+2022,Feb,South West,Other - Mental Health Services,0,4
+2022,Feb,South West,Other - Other Services,401,5743
+2022,Feb,South West,Other - Paediatric Services,1922,11126
+2022,Feb,South West,Other - Surgical Services,7467,30905
+2022,Feb,South West,Plastic Surgery Service,1043,4878
+2022,Feb,South West,Respiratory Medicine Service,387,4214
+2022,Feb,South West,Rheumatology Service,319,3076
+2022,Feb,South West,Total,60769,343430
+2022,Feb,South West,Trauma and Orthopaedic Service,18094,66352
+2022,Feb,South West,Urology Service,3626,16713
+2022,Mar,East of England,Cardiology Service,873,16807
+2022,Mar,East of England,Cardiothoracic Surgery Service,68,857
+2022,Mar,East of England,Dermatology Service,2227,23864
+2022,Mar,East of England,Ear Nose and Throat Service,6993,35752
+2022,Mar,East of England,Elderly Medicine Service,8,489
+2022,Mar,East of England,Gastroenterology Service,1665,18811
+2022,Mar,East of England,General Internal Medicine Service,177,1696
+2022,Mar,East of England,General Surgery Service,7097,37705
+2022,Mar,East of England,Gynaecology Service,5996,31685
+2022,Mar,East of England,Neurology Service,148,5938
+2022,Mar,East of England,Neurosurgical Service,223,964
+2022,Mar,East of England,Ophthalmology Service,5786,46929
+2022,Mar,East of England,Oral Surgery Service,2732,16850
+2022,Mar,East of England,Other - Medical Services,2091,18700
+2022,Mar,East of England,Other - Mental Health Services,1,61
+2022,Mar,East of England,Other - Other Services,1570,9376
+2022,Mar,East of England,Other - Paediatric Services,1925,13974
+2022,Mar,East of England,Other - Surgical Services,1587,11689
+2022,Mar,East of England,Plastic Surgery Service,1768,10230
+2022,Mar,East of England,Respiratory Medicine Service,127,7349
+2022,Mar,East of England,Rheumatology Service,326,5863
+2022,Mar,East of England,Total,64797,412492
+2022,Mar,East of England,Trauma and Orthopaedic Service,16680,70749
+2022,Mar,East of England,Urology Service,4729,26154
+2022,Mar,London,Cardiology Service,1319,19340
+2022,Mar,London,Cardiothoracic Surgery Service,95,1450
+2022,Mar,London,Dermatology Service,1055,21699
+2022,Mar,London,Ear Nose and Throat Service,5410,40599
+2022,Mar,London,Elderly Medicine Service,4,526
+2022,Mar,London,Gastroenterology Service,688,16850
+2022,Mar,London,General Internal Medicine Service,41,1783
+2022,Mar,London,General Surgery Service,4254,34717
+2022,Mar,London,Gynaecology Service,3323,35765
+2022,Mar,London,Neurology Service,205,13567
+2022,Mar,London,Neurosurgical Service,956,8513
+2022,Mar,London,Ophthalmology Service,1422,39257
+2022,Mar,London,Oral Surgery Service,899,21623
+2022,Mar,London,Other - Medical Services,3660,41992
+2022,Mar,London,Other - Mental Health Services,69,3877
+2022,Mar,London,Other - Other Services,712,8519
+2022,Mar,London,Other - Paediatric Services,2853,34481
+2022,Mar,London,Other - Surgical Services,4448,37122
+2022,Mar,London,Plastic Surgery Service,1644,8533
+2022,Mar,London,Respiratory Medicine Service,257,8657
+2022,Mar,London,Rheumatology Service,380,7258
+2022,Mar,London,Total,42476,487749
+2022,Mar,London,Trauma and Orthopaedic Service,5438,53639
+2022,Mar,London,Urology Service,3344,27982
+2022,Mar,Midlands,Cardiology Service,1376,20920
+2022,Mar,Midlands,Cardiothoracic Surgery Service,321,1636
+2022,Mar,Midlands,Dermatology Service,5376,32950
+2022,Mar,Midlands,Ear Nose and Throat Service,14839,64870
+2022,Mar,Midlands,Elderly Medicine Service,23,824
+2022,Mar,Midlands,Gastroenterology Service,6563,39139
+2022,Mar,Midlands,General Internal Medicine Service,163,2966
+2022,Mar,Midlands,General Surgery Service,18053,62735
+2022,Mar,Midlands,Gynaecology Service,10712,54806
+2022,Mar,Midlands,Neurology Service,2683,17779
+2022,Mar,Midlands,Neurosurgical Service,607,3659
+2022,Mar,Midlands,Ophthalmology Service,11586,71204
+2022,Mar,Midlands,Oral Surgery Service,6881,33685
+2022,Mar,Midlands,Other - Medical Services,2528,31292
+2022,Mar,Midlands,Other - Mental Health Services,0,68
+2022,Mar,Midlands,Other - Other Services,700,5608
+2022,Mar,Midlands,Other - Paediatric Services,5018,30671
+2022,Mar,Midlands,Other - Surgical Services,7835,33161
+2022,Mar,Midlands,Plastic Surgery Service,2558,8696
+2022,Mar,Midlands,Respiratory Medicine Service,1027,11742
+2022,Mar,Midlands,Rheumatology Service,776,11287
+2022,Mar,Midlands,Total,138808,708906
+2022,Mar,Midlands,Trauma and Orthopaedic Service,27935,125439
+2022,Mar,Midlands,Urology Service,11248,43769
+2022,Mar,North East and Yorkshire,Cardiology Service,513,11451
+2022,Mar,North East and Yorkshire,Cardiothoracic Surgery Service,122,894
+2022,Mar,North East and Yorkshire,Dermatology Service,1532,18054
+2022,Mar,North East and Yorkshire,Ear Nose and Throat Service,4666,35908
+2022,Mar,North East and Yorkshire,Elderly Medicine Service,21,792
+2022,Mar,North East and Yorkshire,Gastroenterology Service,900,12421
+2022,Mar,North East and Yorkshire,General Internal Medicine Service,86,2860
+2022,Mar,North East and Yorkshire,General Surgery Service,7236,39256
+2022,Mar,North East and Yorkshire,Gynaecology Service,4282,32520
+2022,Mar,North East and Yorkshire,Neurology Service,430,9765
+2022,Mar,North East and Yorkshire,Neurosurgical Service,897,4279
+2022,Mar,North East and Yorkshire,Ophthalmology Service,3458,37775
+2022,Mar,North East and Yorkshire,Oral Surgery Service,2683,22659
+2022,Mar,North East and Yorkshire,Other - Medical Services,797,18870
+2022,Mar,North East and Yorkshire,Other - Mental Health Services,7,215
+2022,Mar,North East and Yorkshire,Other - Other Services,731,8760
+2022,Mar,North East and Yorkshire,Other - Paediatric Services,2623,22841
+2022,Mar,North East and Yorkshire,Other - Surgical Services,4358,24936
+2022,Mar,North East and Yorkshire,Plastic Surgery Service,2838,14230
+2022,Mar,North East and Yorkshire,Respiratory Medicine Service,165,6294
+2022,Mar,North East and Yorkshire,Rheumatology Service,101,4986
+2022,Mar,North East and Yorkshire,Total,53820,425272
+2022,Mar,North East and Yorkshire,Trauma and Orthopaedic Service,11145,70161
+2022,Mar,North East and Yorkshire,Urology Service,4229,25345
+2022,Mar,North West,Cardiology Service,820,16500
+2022,Mar,North West,Cardiothoracic Surgery Service,245,1481
+2022,Mar,North West,Dermatology Service,1834,20729
+2022,Mar,North West,Ear Nose and Throat Service,10798,48207
+2022,Mar,North West,Elderly Medicine Service,8,1021
+2022,Mar,North West,Gastroenterology Service,3978,32980
+2022,Mar,North West,General Internal Medicine Service,500,2893
+2022,Mar,North West,General Surgery Service,11343,48819
+2022,Mar,North West,Gynaecology Service,9945,53623
+2022,Mar,North West,Neurology Service,1117,14028
+2022,Mar,North West,Neurosurgical Service,1700,10843
+2022,Mar,North West,Ophthalmology Service,6103,52018
+2022,Mar,North West,Oral Surgery Service,8564,31901
+2022,Mar,North West,Other - Medical Services,1126,21009
+2022,Mar,North West,Other - Mental Health Services,11,93
+2022,Mar,North West,Other - Other Services,277,3943
+2022,Mar,North West,Other - Paediatric Services,3771,32788
+2022,Mar,North West,Other - Surgical Services,7778,36237
+2022,Mar,North West,Plastic Surgery Service,3872,15223
+2022,Mar,North West,Respiratory Medicine Service,182,6246
+2022,Mar,North West,Rheumatology Service,241,6622
+2022,Mar,North West,Total,96059,566561
+2022,Mar,North West,Trauma and Orthopaedic Service,14401,75024
+2022,Mar,North West,Urology Service,7445,34333
+2022,Mar,South East,Cardiology Service,202,12937
+2022,Mar,South East,Cardiothoracic Surgery Service,85,528
+2022,Mar,South East,Dermatology Service,370,14612
+2022,Mar,South East,Ear Nose and Throat Service,5270,37832
+2022,Mar,South East,Elderly Medicine Service,31,709
+2022,Mar,South East,Gastroenterology Service,2172,24783
+2022,Mar,South East,General Internal Medicine Service,21,986
+2022,Mar,South East,General Surgery Service,6802,39512
+2022,Mar,South East,Gynaecology Service,5031,37764
+2022,Mar,South East,Neurology Service,374,11912
+2022,Mar,South East,Neurosurgical Service,530,1954
+2022,Mar,South East,Ophthalmology Service,3450,46261
+2022,Mar,South East,Oral Surgery Service,2042,20954
+2022,Mar,South East,Other - Medical Services,1359,18280
+2022,Mar,South East,Other - Mental Health Services,10,271
+2022,Mar,South East,Other - Other Services,496,5832
+2022,Mar,South East,Other - Paediatric Services,1064,13685
+2022,Mar,South East,Other - Surgical Services,4333,25385
+2022,Mar,South East,Plastic Surgery Service,1172,7693
+2022,Mar,South East,Respiratory Medicine Service,156,6280
+2022,Mar,South East,Rheumatology Service,67,5124
+2022,Mar,South East,Total,50759,439053
+2022,Mar,South East,Trauma and Orthopaedic Service,11179,77389
+2022,Mar,South East,Urology Service,4543,28370
+2022,Mar,South West,Cardiology Service,1567,15714
+2022,Mar,South West,Cardiothoracic Surgery Service,184,861
+2022,Mar,South West,Dermatology Service,878,13698
+2022,Mar,South West,Ear Nose and Throat Service,4889,26103
+2022,Mar,South West,Elderly Medicine Service,10,572
+2022,Mar,South West,Gastroenterology Service,1930,17166
+2022,Mar,South West,General Internal Medicine Service,181,1595
+2022,Mar,South West,General Surgery Service,3596,15950
+2022,Mar,South West,Gynaecology Service,3692,22794
+2022,Mar,South West,Neurology Service,579,8468
+2022,Mar,South West,Neurosurgical Service,1211,3061
+2022,Mar,South West,Ophthalmology Service,5345,44128
+2022,Mar,South West,Oral Surgery Service,4321,24607
+2022,Mar,South West,Other - Medical Services,1148,14363
+2022,Mar,South West,Other - Mental Health Services,0,10
+2022,Mar,South West,Other - Other Services,211,5343
+2022,Mar,South West,Other - Paediatric Services,2170,12156
+2022,Mar,South West,Other - Surgical Services,7705,31403
+2022,Mar,South West,Plastic Surgery Service,1101,5306
+2022,Mar,South West,Respiratory Medicine Service,442,4545
+2022,Mar,South West,Rheumatology Service,264,3153
+2022,Mar,South West,Total,63924,358675
+2022,Mar,South West,Trauma and Orthopaedic Service,18531,70460
+2022,Mar,South West,Urology Service,3969,17219
+2022,Apr,East of England,Cardiology Service,988,17700
+2022,Apr,East of England,Cardiothoracic Surgery Service,78,859
+2022,Apr,East of England,Dermatology Service,2473,23529
+2022,Apr,East of England,Ear Nose and Throat Service,7075,36162
+2022,Apr,East of England,Elderly Medicine Service,9,514
+2022,Apr,East of England,Gastroenterology Service,1755,18908
+2022,Apr,East of England,General Internal Medicine Service,167,1861
+2022,Apr,East of England,General Surgery Service,6823,37382
+2022,Apr,East of England,Gynaecology Service,6252,32434
+2022,Apr,East of England,Neurology Service,153,6064
+2022,Apr,East of England,Neurosurgical Service,227,1041
+2022,Apr,East of England,Ophthalmology Service,5728,46926
+2022,Apr,East of England,Oral Surgery Service,2833,16998
+2022,Apr,East of England,Other - Medical Services,2165,19681
+2022,Apr,East of England,Other - Mental Health Services,1,66
+2022,Apr,East of England,Other - Other Services,1578,10040
+2022,Apr,East of England,Other - Paediatric Services,2106,14842
+2022,Apr,East of England,Other - Surgical Services,1637,11760
+2022,Apr,East of England,Plastic Surgery Service,1869,10310
+2022,Apr,East of England,Respiratory Medicine Service,112,7532
+2022,Apr,East of England,Rheumatology Service,454,6065
+2022,Apr,East of England,Total,65293,417315
+2022,Apr,East of England,Trauma and Orthopaedic Service,16194,69467
+2022,Apr,East of England,Urology Service,4616,27174
+2022,Apr,London,Cardiology Service,1309,19979
+2022,Apr,London,Cardiothoracic Surgery Service,109,1543
+2022,Apr,London,Dermatology Service,1222,21819
+2022,Apr,London,Ear Nose and Throat Service,5290,40051
+2022,Apr,London,Elderly Medicine Service,6,544
+2022,Apr,London,Gastroenterology Service,634,16684
+2022,Apr,London,General Internal Medicine Service,48,1661
+2022,Apr,London,General Surgery Service,4407,35062
+2022,Apr,London,Gynaecology Service,3472,37836
+2022,Apr,London,Neurology Service,404,14206
+2022,Apr,London,Neurosurgical Service,1105,9163
+2022,Apr,London,Ophthalmology Service,1443,40577
+2022,Apr,London,Oral Surgery Service,904,22901
+2022,Apr,London,Other - Medical Services,3700,42906
+2022,Apr,London,Other - Mental Health Services,65,4200
+2022,Apr,London,Other - Other Services,706,8674
+2022,Apr,London,Other - Paediatric Services,2692,34615
+2022,Apr,London,Other - Surgical Services,4590,36190
+2022,Apr,London,Plastic Surgery Service,1594,8421
+2022,Apr,London,Respiratory Medicine Service,264,9130
+2022,Apr,London,Rheumatology Service,432,7413
+2022,Apr,London,Total,43026,496472
+2022,Apr,London,Trauma and Orthopaedic Service,5326,54406
+2022,Apr,London,Urology Service,3304,28491
+2022,Apr,Midlands,Cardiology Service,1410,22070
+2022,Apr,Midlands,Cardiothoracic Surgery Service,324,1600
+2022,Apr,Midlands,Dermatology Service,5670,33108
+2022,Apr,Midlands,Ear Nose and Throat Service,15052,66069
+2022,Apr,Midlands,Elderly Medicine Service,19,722
+2022,Apr,Midlands,Gastroenterology Service,6799,40145
+2022,Apr,Midlands,General Internal Medicine Service,159,2968
+2022,Apr,Midlands,General Surgery Service,17530,62659
+2022,Apr,Midlands,Gynaecology Service,11069,56312
+2022,Apr,Midlands,Neurology Service,2840,18210
+2022,Apr,Midlands,Neurosurgical Service,633,3739
+2022,Apr,Midlands,Ophthalmology Service,11602,70574
+2022,Apr,Midlands,Oral Surgery Service,6893,33198
+2022,Apr,Midlands,Other - Medical Services,2468,32008
+2022,Apr,Midlands,Other - Mental Health Services,0,56
+2022,Apr,Midlands,Other - Other Services,581,5666
+2022,Apr,Midlands,Other - Paediatric Services,5073,31250
+2022,Apr,Midlands,Other - Surgical Services,7883,33765
+2022,Apr,Midlands,Plastic Surgery Service,2398,8507
+2022,Apr,Midlands,Respiratory Medicine Service,1079,12328
+2022,Apr,Midlands,Rheumatology Service,829,11084
+2022,Apr,Midlands,Total,138705,714104
+2022,Apr,Midlands,Trauma and Orthopaedic Service,27429,124044
+2022,Apr,Midlands,Urology Service,10965,44022
+2022,Apr,North East and Yorkshire,Cardiology Service,511,11387
+2022,Apr,North East and Yorkshire,Cardiothoracic Surgery Service,116,864
+2022,Apr,North East and Yorkshire,Dermatology Service,1805,17481
+2022,Apr,North East and Yorkshire,Ear Nose and Throat Service,4446,33310
+2022,Apr,North East and Yorkshire,Elderly Medicine Service,25,809
+2022,Apr,North East and Yorkshire,Gastroenterology Service,794,11605
+2022,Apr,North East and Yorkshire,General Internal Medicine Service,73,2834
+2022,Apr,North East and Yorkshire,General Surgery Service,6819,36672
+2022,Apr,North East and Yorkshire,Gynaecology Service,4411,32495
+2022,Apr,North East and Yorkshire,Neurology Service,476,8696
+2022,Apr,North East and Yorkshire,Neurosurgical Service,844,4290
+2022,Apr,North East and Yorkshire,Ophthalmology Service,2919,35959
+2022,Apr,North East and Yorkshire,Oral Surgery Service,2718,22464
+2022,Apr,North East and Yorkshire,Other - Medical Services,704,17394
+2022,Apr,North East and Yorkshire,Other - Mental Health Services,2,241
+2022,Apr,North East and Yorkshire,Other - Other Services,729,9442
+2022,Apr,North East and Yorkshire,Other - Paediatric Services,2607,22761
+2022,Apr,North East and Yorkshire,Other - Surgical Services,4188,23843
+2022,Apr,North East and Yorkshire,Plastic Surgery Service,2623,12522
+2022,Apr,North East and Yorkshire,Respiratory Medicine Service,217,6404
+2022,Apr,North East and Yorkshire,Rheumatology Service,102,5099
+2022,Apr,North East and Yorkshire,Total,51437,406265
+2022,Apr,North East and Yorkshire,Trauma and Orthopaedic Service,10594,66277
+2022,Apr,North East and Yorkshire,Urology Service,3714,23416
+2022,Apr,North West,Cardiology Service,736,17236
+2022,Apr,North West,Cardiothoracic Surgery Service,232,1561
+2022,Apr,North West,Dermatology Service,2371,21073
+2022,Apr,North West,Ear Nose and Throat Service,10947,49237
+2022,Apr,North West,Elderly Medicine Service,8,918
+2022,Apr,North West,Gastroenterology Service,4188,33183
+2022,Apr,North West,General Internal Medicine Service,482,2881
+2022,Apr,North West,General Surgery Service,12853,52068
+2022,Apr,North West,Gynaecology Service,10572,53626
+2022,Apr,North West,Neurology Service,1482,14828
+2022,Apr,North West,Neurosurgical Service,1817,11288
+2022,Apr,North West,Ophthalmology Service,7046,54163
+2022,Apr,North West,Oral Surgery Service,8299,32157
+2022,Apr,North West,Other - Medical Services,1164,21879
+2022,Apr,North West,Other - Mental Health Services,6,88
+2022,Apr,North West,Other - Other Services,236,3640
+2022,Apr,North West,Other - Paediatric Services,3874,34217
+2022,Apr,North West,Other - Surgical Services,6084,33023
+2022,Apr,North West,Plastic Surgery Service,4125,15643
+2022,Apr,North West,Respiratory Medicine Service,156,6829
+2022,Apr,North West,Rheumatology Service,244,6682
+2022,Apr,North West,Total,97937,573726
+2022,Apr,North West,Trauma and Orthopaedic Service,13793,73421
+2022,Apr,North West,Urology Service,7222,34085
+2022,Apr,South East,Cardiology Service,267,13729
+2022,Apr,South East,Cardiothoracic Surgery Service,72,546
+2022,Apr,South East,Dermatology Service,463,14597
+2022,Apr,South East,Ear Nose and Throat Service,5410,38712
+2022,Apr,South East,Elderly Medicine Service,20,679
+2022,Apr,South East,Gastroenterology Service,2126,25279
+2022,Apr,South East,General Internal Medicine Service,14,1102
+2022,Apr,South East,General Surgery Service,6565,39154
+2022,Apr,South East,Gynaecology Service,5088,38414
+2022,Apr,South East,Neurology Service,427,11868
+2022,Apr,South East,Neurosurgical Service,503,1976
+2022,Apr,South East,Ophthalmology Service,3553,44832
+2022,Apr,South East,Oral Surgery Service,2126,21597
+2022,Apr,South East,Other - Medical Services,1453,19348
+2022,Apr,South East,Other - Mental Health Services,10,275
+2022,Apr,South East,Other - Other Services,488,6057
+2022,Apr,South East,Other - Paediatric Services,1172,14386
+2022,Apr,South East,Other - Surgical Services,4218,25813
+2022,Apr,South East,Plastic Surgery Service,1236,7846
+2022,Apr,South East,Respiratory Medicine Service,180,6294
+2022,Apr,South East,Rheumatology Service,82,5065
+2022,Apr,South East,Total,51056,443283
+2022,Apr,South East,Trauma and Orthopaedic Service,10854,76741
+2022,Apr,South East,Urology Service,4729,28973
+2022,Apr,South West,Cardiology Service,1683,16285
+2022,Apr,South West,Cardiothoracic Surgery Service,189,865
+2022,Apr,South West,Dermatology Service,1043,14378
+2022,Apr,South West,Ear Nose and Throat Service,5109,28770
+2022,Apr,South West,Elderly Medicine Service,14,545
+2022,Apr,South West,Gastroenterology Service,1820,17423
+2022,Apr,South West,General Internal Medicine Service,143,1395
+2022,Apr,South West,General Surgery Service,3562,15384
+2022,Apr,South West,Gynaecology Service,3758,23539
+2022,Apr,South West,Neurology Service,711,8747
+2022,Apr,South West,Neurosurgical Service,1252,3072
+2022,Apr,South West,Ophthalmology Service,5509,44101
+2022,Apr,South West,Oral Surgery Service,4537,25609
+2022,Apr,South West,Other - Medical Services,1364,15174
+2022,Apr,South West,Other - Mental Health Services,0,15
+2022,Apr,South West,Other - Other Services,270,4200
+2022,Apr,South West,Other - Paediatric Services,2406,13576
+2022,Apr,South West,Other - Surgical Services,7786,31018
+2022,Apr,South West,Plastic Surgery Service,1108,5554
+2022,Apr,South West,Respiratory Medicine Service,544,4984
+2022,Apr,South West,Rheumatology Service,356,3583
+2022,Apr,South West,Total,65382,365576
+2022,Apr,South West,Trauma and Orthopaedic Service,18017,69971
+2022,Apr,South West,Urology Service,4201,17388
 2019,Apr,East of England,Cardiology,10,3855
 2019,Apr,East of England,Cardiothoracic Surgery,0,445
 2019,Apr,East of England,Dermatology,2,5088

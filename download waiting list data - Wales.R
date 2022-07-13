@@ -2,16 +2,16 @@ library(tidyverse)
 library(lubridate)
 
 # Manually downloaded from https://statswales.gov.wales/Catalogue/Health-and-Social-Care/NHS-Hospital-Waiting-Times/Referral-to-Treatment/patientpathwayswaitingtostarttreatment-by-month-groupedweeks
-wales_raw <- read_csv("data/waiting lists for Wales - raw data - December 2021.csv", skip = 2,
+wales_raw <- read_csv("data/waiting lists for Wales - raw data - April 2022.csv", skip = 2,
                       col_types = cols(
                         .default = col_double(),
-                        X1 = col_character()
+                        `...1` = col_character()
                       ))
 
 wales_waits <- 
   wales_raw %>% 
-  select(-contains(".")) %>% 
-  mutate(Date = dmy(paste0("01-", X1)),
+  # select(-contains(".")) %>% 
+  mutate(Date = dmy(paste0("01-", `...1`)),
          Month = month.abb[month(Date)],
          Year = year(Date)) %>% 
   
