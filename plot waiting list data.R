@@ -1,6 +1,7 @@
 library(tidyverse)
 library(ggfittext)
 library(tidytext)
+library(demographr)
 
 region_waits <- read_csv("data/waiting lists for NHS Regions.csv")
 wales_waits <- read_csv("data/waiting lists for Wales.csv")
@@ -216,6 +217,109 @@ uk_waits %>%
   )
 
 ggsave("charts/NHS waiting list over time by region - more than 18 weeks.png", height = 90, width = 205, units = "mm")
+
+# ---- Plot national waiting list sizes over time in UK: more than 18 weeks ----
+ni_waits_total <- 
+  ni_waits %>%
+  mutate(Region = "Northern Ireland") %>% 
+  group_by(Year, Month, Region) %>% 
+  summarise(`Total waiting > 18 weeks` = sum(`Total waiting > 18 weeks`, na.rm = TRUE))
+
+england_waits <- 
+  region_waits |> 
+  filter(`Treatment Function Name` == "Total") |> 
+  group_by(Year, Month) |> 
+  summarise(
+    `Total waiting > 52 weeks` = sum(`Total waiting > 52 weeks`, na.rm = TRUE),
+    `Total waiting > 18 weeks` = sum(`Total waiting > 18 weeks`, na.rm = TRUE)
+  ) |> 
+  ungroup() |> 
+  mutate(Region = "England")
+
+uk_waits <- 
+  bind_rows(
+    england_waits,
+    wales_waits %>% mutate(Region = "Wales") %>% select(Year, Month, Region, `Total waiting > 18 weeks`),
+    sco_waits %>% filter(Year >= 2019) %>% mutate(Region = "Scotland") %>% select(Year, Month, Region, `Total waiting > 18 weeks` = `Total waiting > 18 weeks`),
+    ni_waits_total %>% select(Year, Month, Region, `Total waiting > 18 weeks`)
+  )
+
+plot_uk_waits <- 
+  uk_waits %>% 
+  mutate(Year = factor(Year),
+         Month = factor(Month, levels = month.abb)) %>% 
+  
+  ggplot(aes(x = Month, y = `Total waiting > 18 weeks`)) +
+  geom_line(aes(colour = Year, group = Year)) +
+  geom_point(aes(colour = Year)) +
+  
+  facet_wrap(~Region, nrow = 2, scales = "free_y") +
+  scale_x_discrete(labels = c("J","F","M","A","M","J","J","A","S","O","N","D")) +
+  scale_y_continuous(labels = scales::comma) +
+  scale_colour_manual(values = rev(c("#cb181d", "#fb6a4a", "#fcae91", "#fee5d9"))) +
+  labs(
+    title = "Number of people waiting more than 18 weeks for treatment",
+    caption = "Source: I&I analysis of NHSE, NHSW, NHS Scotland and NHS NI data",
+    x = NULL,
+    y = "Number of people waiting more than 18 weeks", 
+    colour = NULL
+  ) +
+  theme_classic() +
+  theme(
+    legend.position = "top", 
+    legend.direction = "horizontal",
+    legend.background = element_blank()
+  )
+
+ggsave(
+  plot = plot_uk_waits,
+  filename = "charts/NHS waiting list over time by nation - more than 18 weeks.png", 
+  height = 100, 
+  width = 205, 
+  units = "mm"
+)
+
+# Replot on a log scale
+plot_uk_waits + 
+  scale_y_log10(labels = scales::comma) +
+  labs(
+    title = "Number of people waiting more than 18 weeks for treatment (log scale)",
+    y = "Number of people waiting more than 18 weeks (log scale)", 
+  )
+
+ggsave(filename = "charts/NHS waiting list over time by nation - more than 18 weeks - log scale.png", height = 100, width = 205, units = "mm")
+
+# Replot based on waiting lists sizes per capita
+uk_waits |> 
+  left_join(demographr::population21_country21, by = c("Region" = "country_name")) |> 
+  mutate(rtt_rate = `Total waiting > 18 weeks` / population) |> 
+  
+  mutate(Year = factor(Year),
+         Month = factor(Month, levels = month.abb)) %>% 
+  
+  ggplot(aes(x = Month, y = rtt_rate)) +
+  geom_line(aes(colour = Year, group = Year)) +
+  geom_point(aes(colour = Year)) +
+  
+  facet_wrap(~Region, nrow = 2, scales = "free_y") +
+  scale_x_discrete(labels = c("J","F","M","A","M","J","J","A","S","O","N","D")) +
+  scale_y_continuous(labels = scales::percent) +
+  scale_colour_manual(values = rev(c("#cb181d", "#fb6a4a", "#fcae91", "#fee5d9"))) +
+  labs(
+    title = "Percentage of people waiting more than 18 weeks for treatment",
+    caption = "Source: I&I analysis of NHSE, NHSW, NHS Scotland and NHS NI data",
+    x = NULL,
+    y = "Percentage of people waiting more than 18 weeks", 
+    colour = NULL
+  ) +
+  theme_classic() +
+  theme(
+    legend.position = "top", 
+    legend.direction = "horizontal",
+    legend.background = element_blank()
+  )
+
+ggsave(filename = "charts/NHS waiting list over time by nation - more than 18 weeks - per capita.png", height = 100, width = 205, units = "mm")
 
 # ---- Types of treatment ----
 region_waits %>% 
