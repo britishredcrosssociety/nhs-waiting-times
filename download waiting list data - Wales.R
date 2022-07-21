@@ -9,9 +9,10 @@ wales_raw <- read_csv("data/waiting lists for Wales - raw data - April 2022.csv"
                       ))
 
 wales_waits <- 
-  wales_raw %>% 
-  # select(-contains(".")) %>% 
-  mutate(Date = dmy(paste0("01-", `...1`)),
+  wales_raw %>%
+  rename(Date_text = `...1`) |> 
+  select(-contains(".")) |> 
+  mutate(Date = dmy(paste0("01-", Date_text)),
          Month = month.abb[month(Date)],
          Year = year(Date)) %>% 
   
