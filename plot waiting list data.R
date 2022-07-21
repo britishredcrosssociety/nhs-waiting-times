@@ -303,7 +303,7 @@ uk_waits |>
   
   facet_wrap(~Region, nrow = 2, scales = "free_y") +
   scale_x_discrete(labels = c("J","F","M","A","M","J","J","A","S","O","N","D")) +
-  scale_y_continuous(labels = scales::percent) +
+  scale_y_continuous(labels = scales::percent, limits = c(0, NA)) +
   scale_colour_manual(values = rev(c("#cb181d", "#fb6a4a", "#fcae91", "#fee5d9"))) +
   labs(
     title = "Percentage of people waiting more than 18 weeks for treatment",
