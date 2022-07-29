@@ -55,3 +55,17 @@ scotland_summary <-
 
 scotland_summary |> 
   write_csv("data/waiting lists for Scotland.csv")
+
+# Waiting lists by Health Board
+scotland_hb <- 
+  scotland |> 
+  filter(HBT != "S92000003") |>  # Don't include national waiting lists
+  mutate(
+    Year = str_sub(Month, 1, 4) |> as.integer(),
+    Month = month.abb[as.integer(str_sub(Month, 5, 6))] 
+  ) |> 
+  select(Year, Month, hb_code = HBT, Specialty, `Total waiting < 18 weeks` = Within18Weeks, `Total waiting > 18 weeks` = Over18Weeks)
+
+
+scotland_hb |> 
+  write_csv("data/waiting lists for Scotland - Health Boards.csv")
