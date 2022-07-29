@@ -24,7 +24,7 @@ scotland_hb <-
     Year = str_sub(Month, 1, 4) |> as.integer(),
     Month = month.abb[as.integer(str_sub(Month, 5, 6))] 
   ) |> 
-  select(Year, Month, hb_code = HBT, Specialty, `Total waiting < 18 weeks` = Within18Weeks, `Total waiting > 18 weeks` = Over18Weeks)
+  select(Year, Month, hb19_code = HBT, Specialty, `Total waiting < 18 weeks` = Within18Weeks, `Total waiting > 18 weeks` = Over18Weeks)
 
 scotland_hb |> 
   write_csv("data/waiting lists for Scotland - Health Boards.csv")

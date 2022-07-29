@@ -1,4 +1,4 @@
-Year,Month,hb_code,Specialty,Total waiting < 18 weeks,Total waiting > 18 weeks
+Year,Month,hb19_code,Specialty,Total waiting < 18 weeks,Total waiting > 18 weeks
 2011,Jan,S08000015,All Specialties,4299,1670
 2011,Feb,S08000015,All Specialties,4742,1686
 2011,Mar,S08000015,All Specialties,5760,1566
