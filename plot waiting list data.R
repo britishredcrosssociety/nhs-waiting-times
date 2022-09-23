@@ -11,13 +11,13 @@ ni_waits <- read_csv("data/waiting lists for NI.csv")
 # ---- Plot regional waiting times ----
 # Total numbers of people waiting more than a year in each region
 region_waits %>% 
-  filter(Year == 2022 & Month == "Apr" & `Treatment Function Name` == "Total") %>% 
+  filter(Year == 2022 & Month == "Jul" & `Treatment Function Name` == "Total") %>% 
   
   # Manually include stats from devolved nations
   add_row(
     NHSER20NM = "Wales", 
     `Total waiting > 52 weeks` = wales_waits %>%
-      filter(Year == 2022 & Month == "Apr") %>% 
+      filter(Year == 2022 & Month == "Jul") %>% 
       pull(`Total waiting > 52 weeks`)
   ) %>%
 
@@ -29,7 +29,7 @@ region_waits %>%
   add_row(
     NHSER20NM = "Northern Ireland", 
     `Total waiting > 52 weeks` = ni_waits %>% 
-      filter(Year == 2022 & Month == "Mar") %>% 
+      filter(Year == 2022 & Month == "Jun") %>% 
       summarise(Total = sum(`Total waiting > 52 weeks`, na.rm = TRUE)) %>% 
       pull(Total)
   ) %>%
@@ -53,27 +53,27 @@ ggsave("charts/NHS waiting list by region - more than a year.png", height = 100,
 
 # Number of people waiting > 18 weeks
 region_waits %>% 
-  filter(Year == 2022 & Month == "Apr" & `Treatment Function Name` == "Total") %>% 
+  filter(Year == 2022 & Month == "Jul" & `Treatment Function Name` == "Total") %>% 
   
   # Manually include stats from devolved nations
   add_row(
     NHSER20NM = "Wales", 
     `Total waiting > 18 weeks` = wales_waits %>%
-      filter(Year == 2022 & Month == "Apr") %>% 
+      filter(Year == 2022 & Month == "Jul") %>% 
       pull(`Total waiting > 18 weeks`)
   ) %>%
   
   add_row(
     NHSER20NM = "Scotland", 
     `Total waiting > 18 weeks` = sco_waits %>%
-      filter(Year == 2022 & Month == "Apr") %>% 
+      filter(Year == 2022 & Month == "Jun") %>% 
       pull(`Total waiting > 18 weeks`)
   ) %>%
   
   add_row(
     NHSER20NM = "Northern Ireland", 
     `Total waiting > 18 weeks` = ni_waits %>% 
-      filter(Year == 2022 & Month == "Mar") %>% 
+      filter(Year == 2022 & Month == "Jun") %>% 
       summarise(Total = sum(`Total waiting > 18 weeks`, na.rm = TRUE)) %>% 
       pull(Total)
   ) %>%
@@ -166,7 +166,7 @@ uk_waits %>%
   ) +
   theme_classic() +
   theme(
-    legend.position = c(0.14, 0.95), 
+    legend.position = c(0.18, 0.95), 
     legend.direction = "horizontal",
     legend.background = element_blank()
   )
@@ -211,7 +211,7 @@ uk_waits %>%
   ) +
   theme_classic() +
   theme(
-    legend.position = c(0.14, 0.95), 
+    legend.position = c(0.18, 0.95), 
     legend.direction = "horizontal",
     legend.background = element_blank()
   )
@@ -290,10 +290,12 @@ plot_uk_waits +
 ggsave(filename = "charts/NHS waiting list over time by nation - more than 18 weeks - log scale.png", height = 100, width = 205, units = "mm")
 
 # Replot based on waiting lists sizes per capita
-uk_waits |> 
+uk_waits_per_capita <- 
+  uk_waits |> 
   left_join(demographr::population21_country21, by = c("Region" = "country_name")) |> 
-  mutate(rtt_rate = `Total waiting > 18 weeks` / population) |> 
-  
+  mutate(rtt_rate = `Total waiting > 18 weeks` / population)
+
+uk_waits_per_capita |> 
   mutate(Year = factor(Year),
          Month = factor(Month, levels = month.abb)) %>% 
   
@@ -309,21 +311,22 @@ uk_waits |>
     title = "Percentage of people waiting more than 18 weeks for treatment",
     caption = "Source: I&I analysis of NHSE, NHSW, NHS Scotland and NHS NI data",
     x = NULL,
-    y = "Percentage of people waiting more than 18 weeks", 
+    y = NULL,
     colour = NULL
   ) +
   theme_classic() +
   theme(
     legend.position = "top", 
     legend.direction = "horizontal",
-    legend.background = element_blank()
+    legend.background = element_blank(),
+    plot.title.position = "plot"
   )
 
-ggsave(filename = "charts/NHS waiting list over time by nation - more than 18 weeks - per capita.png", height = 100, width = 205, units = "mm")
+ggsave(filename = "charts/NHS waiting list over time by nation - more than 18 weeks - per capita.png", height = 100, width = 140, units = "mm")
 
 # ---- Types of treatment ----
 region_waits %>% 
-  filter(Year == 2022 & Month == "Apr" & `Treatment Function Name` != "Total") %>%
+  filter(Year == 2022 & Month == "Jul" & `Treatment Function Name` != "Total") %>%
   
   group_by(`Treatment Function Name`) %>% 
   summarise(`Total waiting > 52 weeks` = sum(`Total waiting > 52 weeks`, na.rm = TRUE)) %>% 
@@ -347,7 +350,7 @@ ggsave("charts/NHS waiting list by type of treatment - more than a year.png", he
 # ---- Types of treatment by region ----
 # Plot top three treatments in each region
 region_waits %>% 
-  filter(Year == 2022 & Month == "Apr" & `Treatment Function Name` != "Total") %>%
+  filter(Year == 2022 & Month == "Jul" & `Treatment Function Name` != "Total") %>%
   
   group_by(NHSER20NM, `Treatment Function Name`) %>% 
   summarise(`Total waiting > 52 weeks` = sum(`Total waiting > 52 weeks`, na.rm = TRUE)) %>% 

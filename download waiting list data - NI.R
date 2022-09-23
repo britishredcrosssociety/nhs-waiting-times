@@ -1,8 +1,8 @@
 library(tidyverse)
 library(lubridate)
 
-# Inpatient & Day Case waiting times: https://www.health-ni.gov.uk/publications/northern-ireland-waiting-time-statistics-inpatient-and-day-case-waiting-times-september-2021
-ni_inpatient <- read_csv("https://www.health-ni.gov.uk/sites/default/files/publications/health/hs-niwts-tables-total-waiting-q4-21-22.csv",
+# Inpatient & Day Case waiting times: https://www.health-ni.gov.uk/publications/northern-ireland-waiting-time-statistics-inpatient-and-day-case-waiting-times-june-2022
+ni_inpatient <- read_csv("https://www.health-ni.gov.uk/sites/default/files/publications/health/hs-niwts-tables-total-waiting-q1-22-23.csv",
                          col_types = cols(
                              .default = col_double(),
                              `Quarter Ending` = col_character(),
@@ -11,8 +11,8 @@ ni_inpatient <- read_csv("https://www.health-ni.gov.uk/sites/default/files/publi
                              `Programme of Care` = col_character()
                            ))
 
-# Statistics by HSC Trust and Outpatients: https://www.health-ni.gov.uk/publications/northern-ireland-waiting-time-statistics-outpatient-waiting-times-september-2021
-ni_outpatient <- read_csv("https://www.health-ni.gov.uk/sites/default/files/publications/health/hs-niwts-tables-outpatients-q4-21-22.csv",
+# Statistics by HSC Trust and Outpatients: https://www.health-ni.gov.uk/publications/northern-ireland-waiting-time-statistics-outpatient-waiting-times-june-2022
+ni_outpatient <- read_csv("https://www.health-ni.gov.uk/sites/default/files/publications/health/hs-niwts-tables-outpatients-q1-22-23.csv",
                           col_types = cols(
                             .default = col_character(),
                             `Quarter Ending` = col_character(),

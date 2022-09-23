@@ -2,7 +2,7 @@ library(tidyverse)
 library(lubridate)
 
 # Manually downloaded from https://statswales.gov.wales/Catalogue/Health-and-Social-Care/NHS-Hospital-Waiting-Times/Referral-to-Treatment/patientpathwayswaitingtostarttreatment-by-month-groupedweeks
-wales_raw <- read_csv("data/waiting lists for Wales - raw data - April 2022.csv", skip = 2,
+wales_raw <- read_csv("data/waiting lists for Wales - raw data - July 2022.csv", skip = 2,
                       col_types = cols(
                         .default = col_double(),
                         `...1` = col_character()

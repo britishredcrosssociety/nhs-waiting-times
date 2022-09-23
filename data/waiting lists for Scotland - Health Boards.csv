@@ -134,6 +134,9 @@ Year,Month,hb19_code,Specialty,Total waiting < 18 weeks,Total waiting > 18 weeks
 2022,Jan,S08000015,All Specialties,2393,815
 2022,Feb,S08000015,All Specialties,3180,1699
 2022,Mar,S08000015,All Specialties,3712,2055
+2022,Apr,S08000015,All Specialties,2938,1775
+2022,May,S08000015,All Specialties,3963,1883
+2022,Jun,S08000015,All Specialties,3737,1609
 2011,Jan,S08000016,All Specialties,1284,108
 2011,Feb,S08000016,All Specialties,1355,128
 2011,Mar,S08000016,All Specialties,1691,194
@@ -264,11 +267,14 @@ Year,Month,hb19_code,Specialty,Total waiting < 18 weeks,Total waiting > 18 weeks
 2021,Aug,S08000016,All Specialties,1361,384
 2021,Sep,S08000016,All Specialties,1537,341
 2021,Oct,S08000016,All Specialties,1173,356
-2021,Nov,S08000016,All Specialties,1510,515
+2021,Nov,S08000016,All Specialties,1510,598
 2021,Dec,S08000016,All Specialties,1329,437
 2022,Jan,S08000016,All Specialties,1196,462
 2022,Feb,S08000016,All Specialties,1163,621
 2022,Mar,S08000016,All Specialties,1615,848
+2022,Apr,S08000016,All Specialties,1391,541
+2022,May,S08000016,All Specialties,1882,539
+2022,Jun,S08000016,All Specialties,1577,495
 2011,Jan,S08000017,All Specialties,2169,412
 2011,Feb,S08000017,All Specialties,2361,469
 2011,Mar,S08000017,All Specialties,2565,515
@@ -404,6 +410,9 @@ Year,Month,hb19_code,Specialty,Total waiting < 18 weeks,Total waiting > 18 weeks
 2022,Jan,S08000017,All Specialties,1282,378
 2022,Feb,S08000017,All Specialties,1256,442
 2022,Mar,S08000017,All Specialties,1354,518
+2022,Apr,S08000017,All Specialties,1195,417
+2022,May,S08000017,All Specialties,1375,526
+2022,Jun,S08000017,All Specialties,1327,490
 2011,Jan,S08000019,All Specialties,3677,802
 2011,Feb,S08000019,All Specialties,3793,755
 2011,Mar,S08000019,All Specialties,4241,727
@@ -539,6 +548,9 @@ Year,Month,hb19_code,Specialty,Total waiting < 18 weeks,Total waiting > 18 weeks
 2022,Jan,S08000019,All Specialties,3357,1501
 2022,Feb,S08000019,All Specialties,3405,1601
 2022,Mar,S08000019,All Specialties,3644,1582
+2022,Apr,S08000019,All Specialties,3387,1394
+2022,May,S08000019,All Specialties,4133,1815
+2022,Jun,S08000019,All Specialties,3764,1635
 2011,Jan,S08000020,All Specialties,5086,764
 2011,Feb,S08000020,All Specialties,2824,1100
 2011,Mar,S08000020,All Specialties,4368,652
@@ -803,6 +815,9 @@ Year,Month,hb19_code,Specialty,Total waiting < 18 weeks,Total waiting > 18 weeks
 2022,Jan,S08000022,All Specialties,3700,1754
 2022,Feb,S08000022,All Specialties,3677,1956
 2022,Mar,S08000022,All Specialties,4128,1907
+2022,Apr,S08000022,All Specialties,3440,1604
+2022,May,S08000022,All Specialties,4288,1793
+2022,Jun,S08000022,All Specialties,4285,1885
 2011,Jan,S08000024,All Specialties,9654,2696
 2011,Feb,S08000024,All Specialties,9323,1931
 2011,Mar,S08000024,All Specialties,11801,2238
@@ -938,6 +953,9 @@ Year,Month,hb19_code,Specialty,Total waiting < 18 weeks,Total waiting > 18 weeks
 2022,Jan,S08000024,All Specialties,6714,2022
 2022,Feb,S08000024,All Specialties,6605,2110
 2022,Mar,S08000024,All Specialties,7567,2584
+2022,Apr,S08000024,All Specialties,5763,1806
+2022,May,S08000024,All Specialties,6438,1947
+2022,Jun,S08000024,All Specialties,6475,2088
 2011,Jan,S08000025,All Specialties,185,2
 2011,Feb,S08000025,All Specialties,195,1
 2011,Mar,S08000025,All Specialties,225,3
@@ -1073,6 +1091,9 @@ Year,Month,hb19_code,Specialty,Total waiting < 18 weeks,Total waiting > 18 weeks
 2022,Jan,S08000025,All Specialties,662,127
 2022,Feb,S08000025,All Specialties,580,52
 2022,Mar,S08000025,All Specialties,786,103
+2022,Apr,S08000025,All Specialties,525,48
+2022,May,S08000025,All Specialties,717,85
+2022,Jun,S08000025,All Specialties,579,82
 2011,Jan,S08000026,All Specialties,1651,18
 2011,Feb,S08000026,All Specialties,1453,21
 2011,Mar,S08000026,All Specialties,1758,26
@@ -1208,6 +1229,9 @@ Year,Month,hb19_code,Specialty,Total waiting < 18 weeks,Total waiting > 18 weeks
 2022,Jan,S08000026,All Specialties,312,141
 2022,Feb,S08000026,All Specialties,350,82
 2022,Mar,S08000026,All Specialties,341,103
+2022,Apr,S08000026,All Specialties,271,35
+2022,May,S08000026,All Specialties,491,55
+2022,Jun,S08000026,All Specialties,310,43
 2011,Jan,S08000028,All Specialties,283,14
 2011,Feb,S08000028,All Specialties,283,12
 2011,Mar,S08000028,All Specialties,304,19
@@ -1343,6 +1367,9 @@ Year,Month,hb19_code,Specialty,Total waiting < 18 weeks,Total waiting > 18 weeks
 2022,Jan,S08000028,All Specialties,412,38
 2022,Feb,S08000028,All Specialties,354,53
 2022,Mar,S08000028,All Specialties,414,66
+2022,Apr,S08000028,All Specialties,382,63
+2022,May,S08000028,All Specialties,420,68
+2022,Jun,S08000028,All Specialties,459,68
 2011,Jan,S08000029,All Specialties,5660,450
 2011,Feb,S08000029,All Specialties,5962,353
 2011,Mar,S08000029,All Specialties,6808,344
@@ -1478,6 +1505,9 @@ Year,Month,hb19_code,Specialty,Total waiting < 18 weeks,Total waiting > 18 weeks
 2022,Jan,S08000029,All Specialties,2475,725
 2022,Feb,S08000029,All Specialties,3127,1250
 2022,Mar,S08000029,All Specialties,3706,1602
+2022,Apr,S08000029,All Specialties,2470,1040
+2022,May,S08000029,All Specialties,3777,1470
+2022,Jun,S08000029,All Specialties,3543,1300
 2011,Jan,S08000030,All Specialties,8114,242
 2011,Feb,S08000030,All Specialties,8672,230
 2011,Mar,S08000030,All Specialties,9773,251
@@ -1742,6 +1772,9 @@ Year,Month,hb19_code,Specialty,Total waiting < 18 weeks,Total waiting > 18 weeks
 2022,Jan,S08000031,All Specialties,10909,4236
 2022,Feb,S08000031,All Specialties,11533,4077
 2022,Mar,S08000031,All Specialties,13438,4579
+2022,Apr,S08000031,All Specialties,10254,3195
+2022,May,S08000031,All Specialties,12769,3897
+2022,Jun,S08000031,All Specialties,12380,3815
 2011,Jan,S08000032,All Specialties,6576,1751
 2011,Feb,S08000032,All Specialties,6161,1013
 2011,Mar,S08000032,All Specialties,5468,635
@@ -1877,6 +1910,9 @@ Year,Month,hb19_code,Specialty,Total waiting < 18 weeks,Total waiting > 18 weeks
 2022,Jan,S08000032,All Specialties,6599,1946
 2022,Feb,S08000032,All Specialties,6647,1986
 2022,Mar,S08000032,All Specialties,6918,2719
+2022,Apr,S08000032,All Specialties,5887,2053
+2022,May,S08000032,All Specialties,7263,2689
+2022,Jun,S08000032,All Specialties,6275,2399
 2011,Jan,SB0801,All Specialties,652,17
 2011,Feb,SB0801,All Specialties,831,32
 2011,Mar,SB0801,All Specialties,844,39
@@ -2012,3 +2048,6 @@ Year,Month,hb19_code,Specialty,Total waiting < 18 weeks,Total waiting > 18 weeks
 2022,Jan,SB0801,All Specialties,117,9
 2022,Feb,SB0801,All Specialties,114,9
 2022,Mar,SB0801,All Specialties,120,12
+2022,Apr,SB0801,All Specialties,95,22
+2022,May,SB0801,All Specialties,104,18
+2022,Jun,SB0801,All Specialties,118,16
